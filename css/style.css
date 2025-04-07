@@ -407,9 +407,6 @@ button:hover{
 
 /*TABLETS*/
 @media only screen and (min-width: 481px) and (max-width: 978px){
-    body{
-        padding-top: 80px;
-    }
     /*INDEX*/
     .introduccion{
         text-align: center;
