@@ -403,11 +403,55 @@ button:hover{
         display: none !important; 
     }
 }
-/*Query para quitar el sidebar en mobile*/
+/*MOBILE LANDSCAPE*/
 @media only screen and (max-width:978){
     .stickySidebar{
         display: none;
     }
+        /*INDEX*/
+        .introduccion{
+            text-align: center;
+        }
+        .imgSecundarias{
+            display:none;
+        }
+        .listaConsejos{
+            width: 100%;
+        }
+        .listaConsejos li{
+            text-align: center;
+            width: 100%;
+            max-width: 90%;
+        }
+        /*EQUIPAMIENTO*/
+        .equipamientoIntro{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .equipamientoIntro p{
+            max-width: 100%;
+            width: 90%;
+            text-align: center;
+        }
+        .equipamientoIntro img{
+            display: none;
+        }
+        .equipamientoDetallado{
+            border: none;
+            background: none;
+        }
+        .equipamientoDescripcion{
+            flex-direction: row;
+        }
+        .imgEquipDescripcion{
+            display: none;
+        }
+        .equipamientoCaracterizacion{
+            max-width: 100%;
+            width: 100%;
+            text-align: start;
+            margin-bottom: 20px;
+        }
 }
 
 /*TABLETS*/
