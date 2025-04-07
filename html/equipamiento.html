@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhasmoGuide</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Jolly+Lodger&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">PhasmoGuide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="equipamiento.html">Equipamiento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fantasmas.html">Fantasmas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="objetosMalditos.html">Objetos Malditos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comentarios.html">Comentarios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row">                
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar vh-100 p-3 sticky-top stickySidebar" id="navEquipamiento">
+                <ul class="nav flex-column">
+                    <li><a href="#equipamientoNav" class="">Inicio</a></li>
+                    <hr class="d-none d-md-block my-0 me-5">
+                    <li><a href="#esencialApoyo" class="">Esencial y Apoyo</a>
+                        <ul>
+                            <li><a href="#linterna" class="">Linterna</a></li>
+                            <li><a href="#equipParaLaCabeza" class="">Equipamiento para la Cabeza</a></li>
+                            <li><a href="#tripode" class="">Tripode</a></li>
+                            <li><a href="#camaraDeFotos" class="">Camara de Fotos</a></li>
+                            <li><a href="#sensorDeMovimiento" class="">Sensor de Movimiento</a></li>
+                            <li><a href="#microfonoParabolico" class="">Microfono Parabolico</a></li>
+                            <li><a href="#sensorDeSonidos" class="">Sensor de Sonidos</a></li>
+                            <li><a href="#encendedor" class="">Encendedor</a></li>
+                            <li><a href="#velas" class="">Velas</a></li>
+                            <li><a href="#sal" class="">Sal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#deteccionEvidencias">Deteccion de Evidencias</a>
+                        <ul>
+                            <li><a href="#emf" class="">EMF</a></li>
+                            <li><a href="#termometro" class="">Termometro</a></li>
+                            <li><a href="#linternaUv" class="">Linterna UV</a></li>
+                            <li><a href="#spiritBox" class="">SpiritBox</a></li>
+                            <li><a href="#libroEscrituraFantasmal" class="">Libro de Escritura Fantasmal</a></li>
+                            <li><a href="#proyectorDots" class="">Proyector Dots</a></li>
+                            <li><a href="#camaraDeVideos" class="">Camara de Videos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#proteccionSupervivencia">Proteccion y Supervivencia</a>
+                        <ul>
+                            <li><a href="#incienso" class="">Incienso</a></li>
+                            <li><a href="#crucifijo" class="">Crucifijo</a></li>
+                            <li><a href="#medicacionCordura" class="">Medicacion para la Cordura</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--CONTENIDO-->
+            <section class="col-md-9 col-lg-10 p-4">
+                <section class="equipamiento" id="equipamientoNav">
+                    <h1>Equipamiento</h1>
+                    <div class="equipamientoIntro">
+                        <p>En Phasmophobia, el equipamiento juega un papel fundamental en la investigación paranormal. Cada herramienta está diseñada para ayudar a los jugadores a detectar, identificar y recopilar evidencia sobre la entidad que habita en la ubicación. Desde dispositivos tecnológicos como el EMF Reader y la Spirit Box, hasta herramientas tradicionales como la Sal, cada objeto tiene una función específica que permite a los cazafantasmas acercarse a la verdad… o a su perdición.
+                        Elegir el equipo adecuado y saber cómo usarlo correctamente puede marcar la diferencia entre una investigación exitosa y un encuentro mortal con el fantasma. En este artículo, exploraremos los diferentes tipos de equipamiento disponibles y cada uno de sus niveles, su propósito y cómo usarlos de manera efectiva para descubrir qué entidad está acechando en la oscuridad.</p>
+        
+                        <img src="../img/phasmophobia04.jpg" alt="Imagen de Phasmophobia">
+                    </div>
+                    <img class="imagPhasmoEquipamiento" src="../img/equipamiento01.jpg" alt="Equipamiento Phasmophobia Imagen">
+                </section>
+        
+                <section class="equipamientoDetallado">
+                    <h2>Equipamiento</h2>
+                    <!--ESENCIAL Y APOYO-->
+                    <h3 id="esencialApoyo">Esencial y Apoyo</h3>
+                    <!--LINTERNA-->
+                    <div class="equipamientoDescripcion" id="linterna">
+                        <div class="equipamientoCaracterizacion"><p><strong>Linterna:</strong> Ilumina el entorno y permite explorar en la oscuridad. Evita que la cordura se drene más rápido cuando el jugador se encuentra en una zona iluminada por ella. Se recomienda mejorarla para obtener una mejor visibilidad</p>
+                        </div>
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/linterna/nivel01.jpg" alt="Imagen linterna nivel 01">
+                            <img src="../img/equipamiento/linterna/nivel02.jpg" alt="Imagen linterna nivel 02">
+                            <img src="../img/equipamiento/linterna/nivel03.jpg" alt="Imagen linterna nivel 03">
+                        </div>
+                    </div>
+                    <div class="esencialApoyo">
+        
+                        <!--EQUIPAMIENTO PARA LA CABEZA-->
+                        <div class="equipamientoDescripcion" id="equipParaLaCabeza">
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/equipamientoCabeza/nivel01.jpg" alt="Imagen Equipamiento para la Cabeza Nivel 01">
+                                <img src="../img/equipamiento/equipamientoCabeza/nivel02.jpg" alt="Imagen Equipamiento para la Cabeza Nivel 02">
+                                <img src="../img/equipamiento/equipamientoCabeza/nivel03.jpg" alt="Imagen Equipamiento para la Cabeza Nivel 03">
+                            </div>
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Equipamiento para la Cabeza:</strong> Este equipamiento se monta en la cabeza del jugador y no ocupa espacio en el inventario. Solo se puede quitar dejándolo en la camioneta, colgado en el lugar de donde se tomó. Se activa y desactiva manteniendo presionada la tecla T por defecto.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Funciona como una cámara de video, permitiendo que un jugador monitoree la cámara de otro desde la camioneta.</li>
+                                    <li><b>Nivel 02:</b> Deja de ser una cámara de video y se convierte en una linterna para la cabeza.</li>
+                                    <li><b>Nivel 03:</b> Se transforma en unas gafas de visión nocturna, activándose de la misma manera que el nivel 02.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--TRIPODE-->
+                        <div class="equipamientoDescripcion" id="tripode">
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Tripode:</strong> Soporte para colocar la Cámara de Video y facilitar la captura de Orbes Fantasmales sin necesidad de sostenerla. Los fantasmas podrían interferir con las cámaras que has colocado e intentar volcarlas.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Tiene una estabilidad baja.</li>
+                                    <li><b>Nivel 02:</b> Este tripode ha sido mejorado con un motor rotacional. Si miras la imagen desde el camión podras emplear los controles en pantalla para rotar el motor del tripode. Tiene una estabilidad media. </li>
+                                    <li><b>Nivel 03:</b> Como sus versiones anteriores este tripode es similar pero con una estabilidad alta.</li>
+                                </ul>
+                            </div>
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/tripode/nivel01.jpg" alt="Imagen Tripode Nivel 01">
+                                <img src="../img/equipamiento/tripode/nivel02.jpg" alt="Imagen Tripode Nivel 02">
+                                <img src="../img/equipamiento/tripode/nivel03.jpg" alt="Imagen Tripode Nivel 03">
+                            </div>
+                        </div>
+                        
+                        <!--CAMARA DE FOTOS-->
+                        <div class="equipamientoDescripcion" id="camaraDeFotos">
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/camaraDeFotos/nivel01.jpg" alt="Imagen Camara de Video Nivel 01">
+                                <img src="../img/equipamiento/camaraDeFotos/nivel02.jpg" alt="Imagen Camara de Video Nivel 02">
+                                <img src="../img/equipamiento/camaraDeFotos/nivel03.jpg" alt="Imagen Camara de Video Nivel 03">
+                            </div>
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Camara de Fotos:</strong> Cámara de Fotos : Captura evidencia como interacciones, huellas, cadáveres de jugadores y el fantasma mismo para obtener recompensas adicionales.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Solo interferirá con el fantasma en el momento en el que saques la fotografia. Tiene un tiempo de 3Seg entre cada fotografia tomada.</li>
+                                    <li><b>Nivel 02:</b> Tiene una resistencia paranormal media y su tiempo entre cada fotografia es de 2Seg.</li>
+                                    <li><b>Nivel 03:</b> Por mucho la mejor de los 3 niveles debido a su corto tiempo entre cada fotografia con 1Seg y su resistencia paranormal alta.</li>
+                                </ul>
+                            </div>
+                        </div>  
+                        
+                        
+                        <!--SENSOR DE MOVIMIENTO-->
+                        <div class="equipamientoDescripcion" id="sensorDeMovimiento">
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Sensor De Movimiento:</strong> Es un objeto que nos puede servir para rastrear al fantasma y saber por donde se esta moviendo.
+                                    También se puede ver colocado desde el mapa que se encuentra en el camión, y cuando el fantasma camine enfrente o sobre la linea del sensor, se va a iluminar y en la camioneta hará un ruido.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Se puede colocar en una pared y en el piso. </li>
+                                    <li><b>Nivel 02:</b> Se puede colocar en una pared, en el piso y en el marco de las puertas.</li>
+                                    <li><b>Nivel 03:</b> Se coloca en el piso y genera un radio de deteccion.</li>
+                                </ul>
+                            </div>
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/sensorDeMovimiento/nivel01.jpg" alt="Imagen Sensor De Movimiento Nivel 01">
+                                <img src="../img/equipamiento/sensorDeMovimiento/nivel02.jpg" alt="Imagen Sensor De Movimiento Nivel 02">
+                                <img src="../img/equipamiento/sensorDeMovimiento/nivel03.jpg" alt="Imagen Sensor De Movimiento Nivel 03">
+                            </div>
+                        </div>
+                        <!--MICROFONO PARABOLICO-->
+                        <div class="equipamientoDescripcion" id="microfonoParabolico">
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/microfonoParabolico/nivel01.jpg" alt="Imagen Microfono Parabolico Nivel 01">
+                                <img src="../img/equipamiento/microfonoParabolico/nivel02.jpg" alt="Imagen Microfono Parabolico Nivel 02">
+                                <img src="../img/equipamiento/microfonoParabolico/nivel03.jpg" alt="Imagen Microfono Parabolico Nivel 03">
+                            </div>
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Microfono Parabolico:</strong> El microfono parabolico se utiliza para detectar sonidos a grandes distancias, son muy útiles en mapas muy grandes.
+                                    No funciona entre pisos, esto quiere decir que si estas en la planta baja y el fantasma esta en el 1er piso no se lo va a detectar</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Solo funciona para detectar los sonidos a grandes distancias</li>
+                                    <li><b>Nivel 02:</b> Ademas de detectar sonidos a grandes distancias viene con una pantalla incorporada que muestra la frecuencia del sonido.</li>
+                                    <li><b>Nivel 03:</b> La pantalla que tiene incorporada este nivel muestra en que direccion se detecto el sonido.</li>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                        <!--SENSOR DE SONIDOS-->
+                        <div class="equipamientoDescripcion" id="sensorDeSonidos">
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Sensor De Sonidos:</strong> Capta sonidos en grandes áreas y ayuda a determinar dónde está el fantasma con solo ponerlos en el piso de una habitacion.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Tiene un rango de entre 5M y 10M al rededor.</li>
+                                    <li><b>Nivel 02:</b> Este sensor a sido modificado para adaptarse a tres tipos de tamaño diferentes 5M, 10M y 15M.</li>
+                                    <li><b>Nivel 03:</b> El tripode cuenta con articulaciones rotacionales permitiendo cambiar hacia donde detectan sonido los microfonos (En cono / Hacia afuera: Laterales/ Hacia adentro: Esferica). Tiene un rango de 5M, 10M y 15M.</li>
+                                </ul>
+                            </div>
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/sensorDeSonido/nivel01.jpg" alt="Imagen Sensor De Sonidos Nivel 01">
+                                <img src="../img/equipamiento/sensorDeSonido/nivel02.jpg" alt="Imagen Sensor De Sonidos Nivel 02">
+                                <img src="../img/equipamiento/sensorDeSonido/nivel03.jpg" alt="Imagen Sensor De Sonidos Nivel 03">
+                            </div>
+                        </div>
+                            
+                        <!--ENCENDEDOR-->
+                        <div class="equipamientoDescripcion" id="encendedor">
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/encendedor/nivel01.jpg" alt="Imagen Encendedor Nivel 01">
+                                <img src="../img/equipamiento/encendedor/nivel02.jpg" alt="Imagen Encendedor Nivel 02">
+                                <img src="../img/equipamiento/encendedor/nivel03.jpg" alt="Imagen Encendedor Nivel 03">
+                            </div>
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Encendedor:</strong> Permite encender velas, incienso y fuego en ciertas interacciones.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Cerillas con solo diez usos. Cada cerilla dura 10S.</li>
+                                    <li><b>Nivel 02:</b> Un mechero de gas que dura 5Min.</li>
+                                    <li><b>Nivel 03:</b> Con su gran llama aporta una luz mas brillante y con mas alcance. Es impermeable asi que no te preocupes si esta lloviendo. Tiene un tiempo de uso de 10Min.</li>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                        <!--VELAS-->
+                        <div class="equipamientoDescripcion" id="velas">
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Velas:</strong> Proporciona luz sin afectar la cordura del jugador (la cordura disminuye mas lentamente estando cerca de una vela) y puede usarse como un objetivo secundario en algunos contratos. Tiene un rango de 2M.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Cuenta con una duracion de 5Min. Su reduccion de perdida de cordura es del 33%.</li>
+                                    <li><b>Nivel 02:</b> La duracion de esta es de 10Min y su reduccion de perdida de cordura es del 50%.</li>
+                                    <li><b>Nivel 03:</b> Este candil impermeable aguantara un contrato entero con una reduccion de perdida de cordura del 66%.</li>
+                                </ul>
+                            </div>
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/velas/nivel01.jpg" alt="Imagen Velas Nivel 01">
+                                <img src="../img/equipamiento/velas/nivel02.jpg" alt="Imagen Velas Nivel 02">
+                                <img src="../img/equipamiento/velas/nivel03.jpg" alt="Imagen Velas Nivel 03">
+                            </div>
+                        </div>
+                        <!--SAL-->
+                        <div class="equipamientoDescripcion" id="sal">
+                            <div class="imgEquipDescripcion">
+                                <img src="../img/equipamiento/sal/nivel01.jpg" alt="Imagen Sal Nivel 01">
+                                <img src="../img/equipamiento/sal/nivel02.jpg" alt="Imagen Sal Nivel 02">
+                                <img src="../img/equipamiento/sal/nivel03.jpg" alt="Imagen Sal Nivel 03">
+                            </div>
+                            <div class="equipamientoCaracterizacion">
+                                <p><strong>Sal:</strong> Se coloca en el suelo y revela pisadas de ciertos fantasmas, lo que ayuda a rastrearlos y completar objetivos secundarios.</p>
+                                <ul class="listaNiveles">
+                                    <li><b>Nivel 01:</b> Solo puedes colocar 2 montoncitos de sal por cada envase.</li>
+                                    <li><b>Nivel 02:</b> Este envase contiene más sal que su predecesor, permitiendote esparcir largas lineas para bloquear pasillos anchos facilmente.</li>
+                                    <li><b>Nivel 03:</b>  Esta sal es tan poderosa que afecta la movilidad del propio fantasma al pisarla obligando al fantasma a darse media vuelta cuando la pise. Si el fantasma la pisa durante un ataque, este se vera realentizado por 2Seg.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--DETECCION DE EVIDENCIAS-->
+                    <h3 id="deteccionEvidencias">Deteccion de Evidencias</h3>
+                    <!--EMF-->
+                    <div class="equipamientoDescripcion" id="emf">
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>EMF:</strong> Detecta niveles de actividad paranormal del 1 al 5. Si alcanza nivel 5, es una evidencia clave.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Tiene una aguja que comienza a moverse dependiendo el nivel de actividad electromagnetica que detecta.</li>
+                                <li><b>Nivel 02:</b> Contiene 5 luces led que muestran las lecturas electromagneticas detectadas.</li>
+                                <li><b>Nivel 03:</b> Puede detectar hasta 3 fuentes de lecturas electromagneticas simultaneamente, mostrara el rango, la direccion e intensidad de las lecturas, al desaparecer uno de los puntos las lecturas restantes tomaran el lugar de las anteriores de la lista.</li>
+                            </ul>
+                        </div>
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/eMF/nivel01.jpg" alt="Imagen EMF Nivel 01">
+                            <img src="../img/equipamiento/eMF/nivel02.jpg" alt="Imagen EMF Nivel 02">
+                            <img src="../img/equipamiento/eMF/nivel03.jpg" alt="Imagen EMF Nivel 03">
+                        </div>
+                    </div>
+                    <!--TERMOMETRO-->
+                    <div class="equipamientoDescripcion" id="termometro">
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/termometro/nivel01.jpg" alt="Imagen Termometro Nivel 01">
+                            <img src="../img/equipamiento/termometro/nivel02.jpg" alt="Imagen Termometro Nivel 02">
+                            <img src="../img/equipamiento/termometro/nivel03.jpg" alt="Imagen Termometro Nivel 03">
+                        </div>
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Termometro:</strong> Con esta herramienta podemos identificar la temperatura actual de una habitación y con ellos nosotros podemos identificar la habitación favorita del fantasma, ya que esta siempre estará debajo de los 5°C. Para la evidencia de “Temperaturas Heladas” este debe de dar -0°C.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Es un termómetro antiguo en el que debes esperar dentro de una habitación para que registre la temperatura de la misma.</li>
+                                <li><b>Nivel 02:</b> Termómetro digital, más preciso que el de nivel 01. Para utilizarlo, mantén presionado el clic derecho del mouse y espera a que analice la temperatura de la habitación.</li>
+                                <li><b>Nivel 03:</b>  Es el termómetro con mejor análisis de temperatura, permitiendo una precisión exacta y un menor tiempo de análisis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--LINTERNA UV-->
+                    <div class="equipamientoDescripcion" id="linternaUv">
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Linterna UV:</strong> Revela huellas dactilares y pisadas del fantasma en puertas, ventanas y sal. Es clave para obtener la evidencia de Huellas Dactilares.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Emite un estrecho rayo de luz de larga distancia.</li>
+                                <li><b>Nivel 02:</b> Esta barra luminosa ilumina un área, y su luz se desvanecerá lentamente con el tiempo. Pero no te preocupes, agítala para obtener un poco más de luz. Tiene un tiempo de uso de 1 minuto.</li>
+                                <li><b>Nivel 03:</b> Con un mayor rango y mejor iluminación, esta linterna te permitirá encontrar huellas y pisadas ultravioletas más rápido.</li>
+                            </ul>
+                        </div>
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/linternaUV/nivel01.jpg" alt="Imagen Linterna UV Nivel 01">
+                            <img src="../img/equipamiento/linternaUV/nivel02.jpg" alt="Imagen Linterna UV Nivel 02">
+                            <img src="../img/equipamiento/linternaUV/nivel03.jpg" alt="Imagen Linterna UV Nivel 03">
+                        </div>
+                    </div>
+                    <!--SPIRIT BOX-->
+                    <div class="equipamientoDescripcion" id="spiritBox">
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/spiritBox/nivel01.jpg" alt="Imagen SpiritBox Nivel 01">
+                            <img src="../img/equipamiento/spiritBox/nivel02.jpg" alt="Imagen SpiritBox Nivel 02">
+                            <img src="../img/equipamiento/spiritBox/nivel03.jpg" alt="Imagen SpiritBox Nivel 03">
+                        </div>
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>SpiritBox:</strong> Se utiliza para hacer preguntas a los fantasmas hablando por el micrófono (o usando la opción de modo texto). Solo algunos fantasmas responden, proporcionando así la evidencia. Es importante estar en la habitación donde se encuentra el fantasma, preferiblemente en la oscuridad. Algunos solo responderán si te encuentras a solas.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Tiene un rango de 3 metros. Si el equipo detecta tu voz, se encenderá una luz roja. Si la luz es blanca, significa que el fantasma ha respondido a tu pregunta.</li>
+                                <li><b>Nivel 02:</b> Su rango aumenta a 4 metros. Si el equipo detecta tu pregunta, una cruz negra brillará en la pantalla. Si el fantasma responde, aparecerá un fantasmita negro iluminado en la pantalla.</li>
+                                <li><b>Nivel 03:</b> Tiene un rango de 5 metros. Si el equipo detecta tu pregunta, se iluminarán los LED en rojo. Si el fantasma responde, los LED brillarán en blanco.  </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--LIBRO DE ESCRITURA FANTASMAL-->
+                    <div class="equipamientoDescripcion" id="libroEscrituraFantasmal">
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Libro De Escritura Fantasmal:</strong> Se coloca en la habitación del fantasma; si escribe en él, se confirma la evidencia de Escritura Fantasmal. Si lo arroja lejos sin escribir, se puede descartar esta evidencia.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Algunos fantasmas pueden tardar en notar su presencia, lo que retrasa el tiempo de escritura. Tiene un rango de 3 metros.</li>
+                                <li><b>Nivel 02:</b> Los fantasmas lo perciben más rápido, reduciendo el tiempo de espera. Su rango aumenta a 4 metros.</li>
+                                <li><b>Nivel 03:</b> Tiene una mayor probabilidad de que el fantasma escriba en él y un rango ampliado a 5 metros.</li>
+                            </ul>
+                        </div>
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/libroFantasma/nivel01.jpg" alt="Imagen Libro de Escritura Fantasmal Nivel 01">
+                            <img src="../img/equipamiento/libroFantasma/nivel02.jpg" alt="Imagen Libro de Escritura Fantasmal Nivel 02">
+                            <img src="../img/equipamiento/libroFantasma/nivel03.jpg" alt="Imagen Libro de Escritura Fantasmal Nivel 03">
+                        </div>
+                    </div>
+                    <!--PROYECTOR DOTS-->
+                    <div class="equipamientoDescripcion" id="proyectorDots">
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/proyectorDots/nivel01.jpg" alt="Imagen Proyector Dots Nivel 01">
+                            <img src="../img/equipamiento/proyectorDots/nivel02.jpg" alt="Imagen Proyector Dots Nivel 02">
+                            <img src="../img/equipamiento/proyectorDots/nivel03.jpg" alt="Imagen Proyector Dots Nivel 03">
+                        </div>
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Proyector Dots:</strong> Muestra la silueta del fantasma en movimiento cuando cruza su luz de puntos verdes. Puede verse directamente o a través de cámaras.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Un proyector portátil, similar a una linterna, que puedes usar mientras te desplazas.</li>
+                                <li><b>Nivel 02:</b> Este proyector emite una esfera de luz a su alrededor. Se recomienda colocarlo en el suelo para cubrir un área mayor.</li>
+                                <li><b>Nivel 03:</b> Puede colocarse en el suelo, paredes o techos bajos. Tiene dos modos de uso: un escaneo que se mueve de un lado a otro y un modo fijo apuntando a una dirección específica. (Para cambiar entre los modos, simplemente haz clic en el proyector).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--CAMARA DE VIDEO-->
+                    <div class="equipamientoDescripcion" id="camaraDeVideos">
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Camara de Video:</strong> Se usa para detectar Orbes Fantasmales (evidencia) al observar a través de la visión nocturna en la camioneta o en persona. Puede colocarse en un trípode o en una superficie plana.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Esta antigua cámara de video tiene una calidad de imagen baja y poca resistencia a la interferencia paranormal.</li>
+                                <li><b>Nivel 02:</b> Cámara de video con mayor calidad de imagen, mejor visión nocturna y mayor resistencia contra la interferencia paranormal.</li>
+                                <li><b>Nivel 03:</b> Cámara de nivel profesional, similar a las usadas en películas, con alta calidad de imagen y gran resistencia a la interferencia paranormal.</li>
+                            </ul>
+                        </div>
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/camaraVideo/nivel01.jpg" alt="Imagen Camara de Videos Nivel 01">
+                            <img src="../img/equipamiento/camaraVideo/nivel02.jpg" alt="Imagen Camara de Videos Nivel 02">
+                            <img src="../img/equipamiento/camaraVideo/nivel03.jpg" alt="Imagen Camara de Videos Nivel 03">
+                        </div>
+                    </div>
+        
+                    <!--PROTECCION Y SUPERVIVENCIA-->
+                    <h3 id="proteccionSupervivencia">Proteccion y Supervivencia</h3>
+                    <!--INCIENSO-->
+                    <div class="equipamientoDescripcion" id="incienso">
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/incienso/nivel01.jpg" alt="Imagen Incienso Nivel 01">
+                            <img src="../img/equipamiento/incienso/nivel02.jpg" alt="Imagen Incienso Nivel 02">
+                            <img src="../img/equipamiento/incienso/nivel03.jpg" alt="Imagen Incienso Nivel 03">
+                        </div>
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Incienso:</strong> Reduce temporalmente la agresividad del fantasma y puede detener momentáneamente una persecución. Debe encenderse con un Encendedor.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Tiene un rango de 3 metros y una duración de 5 segundos. Puede cegar al fantasma durante un ataque por 5 segundos.</li>
+                                <li><b>Nivel 02:</b> Cuenta con un rango de 4 metros y una duración de 6 segundos. Además, ralentiza y ciega al fantasma durante un ataque por 5 segundos.</li>
+                                <li><b>Nivel 03:</b> El mejor de los tres, con un rango de 5 metros, una duración de 7 segundos y la capacidad de inmovilizar y cegar al fantasma durante un ataque por 5 segundos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--CRUCIFIJO-->
+                    <div class="equipamientoDescripcion" id="crucifijo">
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Crucifijo:</strong> Previene cacerías si se coloca en la zona activa del fantasma antes de que ataque. Su efectividad varía según el tipo de fantasma.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Sostenlo o colócalo en la habitación del fantasma para impedir que ataque una única vez. Tiene un rango de 3 metros.</li>
+                                <li><b>Nivel 02:</b> Puede evitar que el fantasma ataque dos veces y su rango aumenta a 4 metros.</li>
+                                <li><b>Nivel 03:</b> Además de impedir dos ataques, puede detener una persecución maldita. Su rango es superior al nivel anterior, con un total de 5 metros.</li>
+                            </ul>
+                        </div>
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/crucifijo/nivel01.jpg" alt="Imagen Crucifijo Nivel 01">
+                            <img src="../img/equipamiento/crucifijo/nivel02.jpg" alt="Imagen Crucifijo Nivel 02">
+                            <img src="../img/equipamiento/crucifijo/nivel03.jpg" alt="Imagen Crucifijo Nivel 03">
+                        </div>
+                    </div>
+                    <!--MEDICACION PARA LA CORDURA-->
+                    <div class="equipamientoDescripcion" id="medicacionCordura">
+                        <div class="imgEquipDescripcion">
+                            <img src="../img/equipamiento/pastillasCordura/nivel 01.jpg" alt="Imagen Medicacion Para Cordura Nivel 01">
+                            <img src="../img/equipamiento/pastillasCordura/nivel 02.jpg" alt="Imagen Medicacion Para Cordura Nivel 02">
+                            <img src="../img/equipamiento/pastillasCordura/nivel 03.jpg" alt="Imagen Medicacion Para Cordura Nivel 03">
+                        </div>
+                        <div class="equipamientoCaracterizacion">
+                            <p><strong>Medicacion Para La Cordura:</strong> Restaura un porcentaje de la cordura perdida.</p>
+                            <ul class="listaNiveles">
+                                <li><b>Nivel 01:</b> Recupera la cordura al beber este antiguo aceite en 20 segundos.</li>
+                                <li><b>Nivel 02:</b> Al tomar estas pastillas, recuperarás la cordura en 10 segundos.</li>
+                                <li><b>Nivel 03:</b> Al usar esta medicación, recuperarás la cordura en 10 segundos. Además, no perderás resistencia al esprintar mientras dure su efecto.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="footerContenido text-center text-light py-2 border-top border-primary">
+        <div class="container">
+            <h3 class="fs-4 fw-bold">PhasmoGuide</h3>
+            <p class=" small mb-1">
+                Esta guía de Phasmophobia está bajo la 
+                <a class="linkLicencia" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)
+                </a>. Puedes compartir y adaptar el contenido siempre que menciones la fuente.
+            </p>
+            <p class="small mb-2">Imágenes capturadas en mis partidas.</p>
+            <div class="d-flex justify-content-center gap-2">
+                <a class="socialLink" href="https://x.com" target="_blank">
+                    <img src="img/icons/twitter-x.svg" alt="X" class="social-icon">
+                </a>
+                <a class="socialLink" href="https://www.youtube.com" target="_blank">
+                    <img src="img/icons/youtube.svg" alt="YouTube" class="social-icon">
+                </a>
+                <a class="socialLink" href="https://discord.com" target="_blank">
+                    <img src="img/icons/discord.svg" alt="Discord" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

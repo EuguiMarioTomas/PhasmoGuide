@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050415;
+    color: #fff;
+    font-family: "Jockey One", serif;
+    overflow: auto;
+}
+/*NAVBAR*/
+.navbar{
+    background-color: #0D0B32;
+    border-bottom: 2px solid #0066ff; 
+}
+.navbar-brand{
+    font-family: "Jolly Lodger", serif;
+    font-size: 34px;
+}
+.navbar-nav a{
+    font-size: 24px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.navbar-nav a:hover{
+    background-color: #0066ff;
+    transform: scale(1.05);
+}
+.navbar-nav a:active{
+    transform: scale(0.95);
+}
+.navbar-toggler:focus, .navbar-toggler:active{
+    outline: none;
+    box-shadow: 0 0 5px #0066ff;
+}
+
+/*INDEX.HTML*/
+.introduccion{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.introduccion h1{
+    font-size: 50px;
+    font-family: "Jolly Lodger", serif;
+    margin-bottom: 20px;
+}
+.introduccion p{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.imgPhasmoIntro{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.imgSecundarias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgSecundarias img{
+    width: 48%;
+    border-radius: 10px;
+}
+.consejos{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.consejos h2{
+    font-family: "Jolly Lodger", serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.listaConsejos{
+    list-style: none;
+    width: 80%;
+    margin: auto;
+}
+.listaConsejos li{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.imgTerciaria img{
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+/*EQUIPAMIENTO*/
+.equipamiento h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Jolly Lodger", serif;
+}
+.equipamientoIntro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.equipamientoIntro p{
+    width: 60%;
+    text-align: justify;
+    font-size: 24px;
+}
+.equipamientoIntro img{
+    width: 35%;
+    border-radius: 10px;
+}
+.imagPhasmoEquipamiento{
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+/*EQUIPAMIENTO INTRO DETALLADO*/
+.equipamientoDetallado{
+    background-color: rgba(0, 0, 255, 0.11);
+    border-radius: 10px;
+    border: 4px solid #0066ff;
+}
+.equipamientoDetallado h2{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 40px 0 10px;
+    font-family: "Jolly Lodger", serif;
+    text-decoration: underline;
+}
+.equipamientoDetallado h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: "Jolly Lodger", serif;
+    text-decoration: underline;
+}
+.equipamientoDetallado p{
+    font-size: 24px;
+}
+.equipamientoDetallado ul{
+    font-size: 20px;
+}
+.listaNiveles{
+    list-style-type: none;
+}
+.equipamientoDetallado strong, b{
+    text-decoration: underline;
+}
+/* EQUIPAMIENTO DETALLADO*/
+.equipamientoDescripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgEquipDescripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    padding: 10px;
+    gap: 10px;
+}
+.imgEquipDescripcion img{
+    width: auto;
+    height: 25vh;
+    border-radius: 10px;
+}
+.equipamientoCaracterizacion{
+    width: 60%;
+    text-align: justify;
+    border-left: 4px solid #0066ff;
+    background-color: rgba(0, 0, 255, 0.164);
+    border-radius: 5px;
+}
+/*NAV EQUIPAMIENTO*/
+#navEquipamiento{
+    background-color: rgba(0, 0, 255, 0.11);
+    border-radius: 10px;
+}
+#navEquipamiento ul, a{
+    list-style: none;
+    text-decoration: none;
+    color:#fff;
+}
+
+/*FANTASMAS*/
+.listaFantasma{
+    list-style-type: none;
+}
+.fantasmaIntro p{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.fantasmaIntro h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Jolly Lodger", serif;
+}
+.fantasmaIntro img{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+.accordionFantasmasItem{
+    background-color: #0D0B32;
+    border: 2px solid #0066ff;
+}
+.accordionFantasmasButton{
+    background-color: #110e46;
+    color: #fff !important;
+    border: none;
+}
+.accordionFantasmasButton:not(.collapsed){
+    background-color: #0066ff;
+    color: #fff !important;
+}
+.accordionFantasmaBody{
+    background-color: #0D0B32 !important;
+    color: #fff !important;
+}
+.accordionFantasmasButton:focus{
+    box-shadow: none !important;
+}
+
+/*OBJETOS MALDITOS*/
+.tituloObjMalditos{
+    text-align: center;
+    font-size: 2rem;
+}
+.textoIntroObjMalditos{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.imgTodosObjMalditos{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+/*CARTAS TAROT*/
+.card img{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+.cartasTarot{
+    background-color: rgba(0, 0, 255, 0.11);
+    border-left: 7px solid #0066ff;
+    border-radius: 15px;
+    color:#fff;
+}
+
+/*OBJETO MALDITO */ 
+.cardObjetoMaldito { 
+    background-color: rgba(0, 0, 255, 0.11);
+    border-left: 7px solid #0066ff;
+    border-radius: 10px; 
+    color: #fff;
+}
+
+/*COMENTARIOS*/
+.formContenido{
+    width: 50%;
+    margin:50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.90);
+    color: #fff;
+    margin-bottom: 50px;
+}
+#tipsForm input, textarea{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+#tipsForm textarea{
+    height: 100px;
+}
+#tipsTable{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#tipsTable th, #tipsTable td{
+    border: 1px solid #0066ff;
+    padding: 10px;
+    text-align: left;
+}
+#tipsTable th {
+    color: white;
+}
+button{
+    background-color: rgba(0, 0, 255, 0.164);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #0066ff;
+}
+
+/* FOOTER */
+.footerContenido{
+    background-color: #0D0B32;
+}
+.footerContenido h3{
+    font-family: "Jolly Lodger", serif;
+}
+.linkLicencia{
+    color:#9370db;
+}
+.linkLicencia:hover{
+    color: #ffcc00; 
+}
+.social-icon{
+    width:24px;
+    height:24px;
+    filter: invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+.social-icon:hover{
+    transform: scale(1.1);
+}
+/*MOBILE*/
+@media only screen and (max-width: 480px){
+    /*INDEX*/
+    .introduccion{
+        text-align: center;
+    }
+    .imgSecundarias{
+        display:none;
+    }
+    .listaConsejos{
+        width: 100%;
+    }
+    .listaConsejos li{
+        text-align: center;
+        width: 100%;
+        max-width: 90%;
+    }
+    /*EQUIPAMIENTO*/
+    .equipamientoIntro{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .equipamientoIntro p{
+        max-width: 100%;
+        width: 90%;
+        text-align: center;
+    }
+    .equipamientoIntro img{
+        display: none;
+    }
+    .equipamientoDetallado{
+        border: none;
+        background: none;
+    }
+    .equipamientoDescripcion{
+        flex-direction: row;
+    }
+    .imgEquipDescripcion{
+        display: none;
+    }
+    .equipamientoCaracterizacion{
+        max-width: 100%;
+        width: 100%;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+    .stickySidebar{
+        display: none;
+    }
+}
+
+
+/*TABLETS*/
+@media only screen and (min-width: 481px) and (max-width: 978px){
+    body{
+        padding-top: 80px;
+    }
+    /*INDEX*/
+    .introduccion{
+        text-align: center;
+    }
+    .imgSecundarias{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgSecundarias img{
+        width: 90%;
+        margin: 10px 0 10px 0;
+    }
+    .listaConsejos li{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    
+    /*EQUIPAMIENTO*/
+    .equipamientoIntro{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .equipamientoIntro p{
+        max-width: 100%;
+        width: 90%;
+        text-align: center;
+    }
+    .equipamientoIntro img{
+        display: none;
+    }
+    .equipamientoDetallado{
+        border: none;
+        background: none;
+    }
+    .equipamientoDescripcion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .imgEquipDescripcion{
+        display: none;
+    }
+
+    .equipamientoCaracterizacion{
+        max-width: 100%;
+        width: 100%;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+    .stickySidebar{
+        display: none;
+    }
+}

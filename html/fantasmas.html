@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhasmoGuide</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Jolly+Lodger&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">PhasmoGuide</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="equipamiento.html">Equipamiento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fantasmas.html">Fantasmas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="objetosMalditos.html">Objetos Malditos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="comentarios.html">Comentarios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="fantasma">
+            <div class="fantasmaIntro">
+                <h1>Fantasma</h1>
+                <p>En Phasmophobia, cada fantasma tiene comportamientos únicos, habilidades especiales y tres evidencias clave que permiten identificarlo, algunos tienen evidencias aseguradas, lo que significa que siempre mostrarán esa prueba en particular. Pueden ser agresivos, otros más sigilosos y algunos pueden manipular su entorno de formas aterradoras. Conocer sus características te ayudará a descubrir su identidad sin convertirte en su próxima víctima. ¡Prepárate para enfrentarte a lo desconocido y afina tus habilidades de investigador paranormal!</p>
+                <img src="../img/PruebaFoto01.png" alt="Imagen Fotrografia Fantasma 3 Estrellas">
+            </div>
+            <div class="accordion" id="accordionFantasmas">
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEspiritu" aria-expanded="false" aria-controls="collapseEspiritu">
+                            Espiritu.
+                        </button>
+                    </h2>
+                    <div id="collapseEspiritu" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Escritura Fantasmal , EMF 5 , Spirit Box. </li>
+                                <li><b>Habilidad:</b> No tiene habilidades especiales, pero es muy impredecible. Si se usa Incienso cerca de el no podrá iniciar una cacería durante 180seg en lugar de los 90seg que tardan la mayoría de los demás fantasma.
+                                </li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEspectro" aria-expanded="false" aria-controls="collapseEspectro">
+                            Espectro.
+                        </button>
+                    </h2>
+                    <div id="collapseEspectro" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Spirit Box, D.O.T.S. </li>
+                                <li><b>Habilidad Especial:</b> El Espectro nunca pisará la sal ni dejará huellas UV. Puede teletransportarse a un jugador fuera de una cacería, lo que generará una lectura de EMF 2 o 5.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnte" aria-expanded="false" aria-controls="collapseEnte">
+                            Ente.
+                        </button>
+                    </h2>
+                    <div id="collapseEnte" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Huellas Dactilares, Spirit Box, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Tiene un parpadeo mucho más largo durante cacerías, haciéndolo parecer casi invisible. Tomar una foto del Fantasma durante un evento lo hará desaparecer. El sonido del evento seguirá escuchándose, pero el Fantasma no estará ahí. No aparece en las fotos de fantasmas. Mirarlo reduce la cordura en 0.5% por segundo. Tiene más probabilidad de manifestarse como una sombra en eventos de fantasma. Puede teletransportarse a un jugador aleatoriamente, causando un EMF 2 en esa ubicación.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePoltergeist" aria-expanded="false" aria-controls="collapsePoltergeist">
+                            Poltergeist.
+                        </button>
+                    </h2>
+                    <div id="collapsePoltergeist" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Huellas Dactilares, Escritura Fantasmal, Spirit Box.</li>
+                                <li><b>Habilidad Especial:</b> Puede lanzar múltiples objetos a la vez (hasta 3-4 en un solo evento). Puede hacer que los objetos leviten antes de lanzarlos. Si lanza muchos objetos a la vez, drena 2% de cordura por objeto lanzado. Si hay muchos objetos cerca, será más activo y agresivo.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBanshee" aria-expanded="false" aria-controls="collapseBanshee">
+                            Banshee.
+                        </button>
+                    </h2>
+                    <div id="collapseBanshee" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Huellas Dactilares, Orbes Fantasmales, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Al inicio del juego, la Banshee elige a un jugador como objetivo. Caza basándose en la cordura del objetivo: 50% de cordura. Cuando el objetivo muere, la Banshee selecciona uno nuevo. Mayor probabilidad de eventos fantasmales cantando. Si desaparece al acercarte durante un evento de canto, tu cordura disminuirá un 15% en lugar de un 10%. Tiene un sonido único en el micrófono parabólico (grito). Ignorará a todos los jugadores que no sean su objetivo durante una caza. Si el objetivo no está en la casa, cazará normalmente. Los Incienso funcionan con jugadores que no son el objetivo, pero no completarán la tarea de "repeler al fantasma con incienso mientras te persigue".</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJinn" aria-expanded="false" aria-controls="collapseJinn">
+                            Jinn.
+                        </button>
+                    </h2>
+                    <div id="collapseJinn" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Huellas Dactilares, Temperaturas Heladas.</li>
+                                <li><b>Habilidad Especial:</b> Si el cuadro electrico está encendido y el Jinn tiene línea de visión con un jugador, se moverá más rápido (hasta 2.5 m/s) hasta que esté a 3 metros del jugador. No puede apagar el cuadro electrico (si lo hace, es porque encendió demasiadas luces). Cuando está a menos de 3m de un jugador, se ralentiza a la velocidad normal. Puede drenar un 25% de cordura si está cerca de un jugador y el cuadro electrico está encendido (esto genera una señal EMF 2 o 5 en el cuadro electrico).</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePesadilla" aria-expanded="false" aria-controls="collapsePesadilla">
+                            Pesadilla.
+                        </button>
+                    </h2>
+                    <div id="collapsePesadilla" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Orbes Fantasmales, Escritura Fantasmal, Spirit Box</li>
+                                <li><b>Habilidad Especial:</b> Puede cazar con 60% de cordura si las luces están apagadas, pero con 40% de cordura si están encendidas. Si un jugador enciende una luz cerca de una Pesadilla, hay una posibilidad de que la apague inmediatamente. No puede encender luces y es más probable que las apague. Mayor probabilidad de realizar un evento donde rompe una bombilla de luz.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRevenant" aria-expanded="false" aria-controls="collapseRevenant">
+                            Revenant.
+                        </button>
+                    </h2>
+                    <div id="collapseRevenant" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Orbes Fantasmales, Escritura Fantasmal, Temperaturas Heladas.</li>
+                                <li><b>Habilidad Especial:</b> Se mueve extremadamente rápido cuando detecta a un jugador(3 m/seg), pero lento si no tiene un objetivo a la vista(1 m/seg).</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSombra" aria-expanded="false" aria-controls="collapseSombra">
+                            Sombra.
+                        </button>
+                    </h2>
+                    <div id="collapseSombra" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Escritura Fantasmal, Temperaturas Heladas.</li>
+                                <li><b>Habilidad Especial:</b> Es el fantasma menos activo y prefiere manifestarse solo cuando los jugadores están lejos. No iniciará eventos fantasmales si un jugador está muy cerca. Puede cazar desde 35% de cordura (más bajo que la mayoría de fantasmas). Rara vez aparece en forma física durante eventos fantasmales.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDemonio" aria-expanded="false" aria-controls="collapseDemonio">
+                            Demonio.
+                        </button>
+                    </h2>
+                    <div id="collapseDemonio" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Huellas Dactilares, Escritura Fantasmal, Temperaturas Heladas.</li>
+                                <li><b>Habilidad Especial:</b> Uno de los fantasmas más agresivos, puede cazar desde 70% de cordura. Tiene un tiempo de espera más corto entre cacerías. Puede cazar inmediatamente después de un evento fantasmal.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYurei" aria-expanded="false" aria-controls="collapseYurei">
+                            Yurei.
+                        </button>
+                    </h2>
+                    <div id="collapseYurei" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Orbes Fantasmales, Temperaturas Heladas, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Mirarlo drena la cordura más rápido que otros fantasmas. Puede cerrar puertas aleatoriamente lo que reduce la cordura de los jugadores cercanos.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOni" aria-expanded="false" aria-controls="collapseOni">
+                            Oni.
+                        </button>
+                    </h2>
+                    <div id="collapseOni" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Temperaturas Heladas, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> No puede hacer el evento de "niebla" o "bola de aire". Drena doble cordura cuando hace un evento de fantasma. Es más visible durante una cacería, parpadea menos que otros fantasmas. Prefiere manifestarse en forma completa en eventos de fantasma, en lugar de una forma sombría o translúcida. Más activo cuando hay más jugadores en la misma habitación.</li>
+                                <li><b>Evidencia Asegurada:</b>  Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYokai" aria-expanded="false" aria-controls="collapseYokai">
+                            Yokai.
+                        </button>
+                    </h2>
+                    <div id="collapseYokai" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <!--TERMINAR-->
+                            <ul class="listaFantasma">
+                                <li><b>Evidencia:</b> </li>
+                                <li><b>Habilidad Especial:</b> </li>
+                                <li><b>Evidencia Asegurada:</b> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHantu" aria-expanded="false" aria-controls="collapseHantu">
+                            Hantu.
+                        </button>
+                    </h2>
+                    <div id="collapseHantu" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b>Huellas Dactilares, Temperaturas Heladas, Orbes Fantasmales.</li>
+                                <li><b>Habilidad Especial:</b> Se mueve más rápido en temperaturas frías y más lento en temperaturas cálidas. Si el disyuntor está apagado, su velocidad aumenta. Deja aliento frío cuando está cazando.</li>
+                                <li><b>Evidencia Asegurada:</b> Temperaturas Heladas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoryo" aria-expanded="false" aria-controls="collapseGoryo">
+                            Goryo.
+                        </button>
+                    </h2>
+                    <div id="collapseGoryo" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Huellas Dactilares, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Solo se ve a través del D.O.T.S. en cámaras de la camioneta. No cambia de habitación una vez que ha sido identificado.</li>
+                                <li><b>Evidencia Asegurada:</b> D.O.T.S.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMyling" aria-expanded="false" aria-controls="collapseMyling">
+                            Myling.
+                        </button>
+                    </h2>
+                    <div id="collapseMyling" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Huellas Dactilares, Escritura Fantasmal.</li>
+                                <li><b>Habilidad Especial:</b> Durante una cacería, solo se puede escuchar a una distancia de 12 metros o menos (incluyendo pasos y sonidos). Otros fantasmas se pueden escuchar hasta 20 metros. Más propenso a hacer sonidos paranormales que se detectan con el micrófono parabólico. Para comprobar si es un Myling, escóndete con una linterna encendida o coloca un DOTS en el suelo: Si solo escuchas los pasos justo cuando tu equipo comienza a parpadear, es probable que sea un Myling.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnryo" aria-expanded="false" aria-controls="collapseOnryo">
+                            Onryo.
+                        </button>
+                    </h2>
+                    <div id="collapseOnryo" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Orbes Fantasmales, Spirit Box, Temperaturas Heladas</li>
+                                <li><b>Habilidad Especial:</b> No puede cazar si hay una llama encendida cerca (4m de distancia). Si sopla 3 llamas y no hay otras cercanas, iniciará una cacería sin importar la cordura. Cada vez que apaga una vela o un encendedor, tiene un 50% de probabilidad de iniciar una cacería. Este porcentaje aumenta un 25% por cada jugador muerto. Si dos jugadores han muerto, cazará siempre que apague una vela. Si usa un Crucifijo sin antes apagar una vela, no es un Onryo.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGemelos" aria-expanded="false" aria-controls="collapseGemelos">
+                            Gemelos.
+                        </button>
+                    </h2>
+                    <div id="collapseGemelos" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Spirit Box, Temperaturas Heladas.</li>
+                                <li><b>Habilidad Especial:</b> Pueden atacar desde dos ubicaciones distintas(No al mismo Tiempo). Uno es más rápido que un fantasma promedio y el otro más lento. Pueden generar actividad en dos lugares diferentes al mismo tiempo.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRaiju" aria-expanded="false" aria-controls="collapseRaiju">
+                            Raiju.
+                        </button>
+                    </h2>
+                    <div id="collapseRaiju" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Orbes Fantasmales, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Se vuelve más rápido cuando está cerca de equipos electrónicos encendidos (2.7 m/s). Durante una cacería, aumenta su radio de interferencia (puede afectar linternas y radios a mayor distancia). Puede cazar desde 65% de cordura si hay un equipo electrónico encendido cerca.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseObake" aria-expanded="false" aria-controls="collapseObake">
+                            Obake.
+                        </button>
+                    </h2>
+                    <div id="collapseObake" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> EMF 5, Huellas Dactilares, Orbes Fantasmales.</li>
+                                <li><b>Habilidad Especial:</b> Único fantasma que puede dejar una huella dactilar de 6 dedos (16.7% de probabilidad). Tiene un 25% de probabilidad de no dejar huellas dactilares. Durante una cacería, tiene un 6.66% de probabilidad de cambiar de modelo de fantasma. Para comprobar si es un Obake, intenta rodearlo en una cacería y observa si cambia de forma.</li>
+                                <li><b>Evidencia Asegurada:</b> Huellas Dactilares.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMimico" aria-expanded="false" aria-controls="collapseMimico">
+                            Mimico
+                        </button>
+                    </h2>
+                    <div id="collapseMimico" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Huellas Dactilares, Temperaturas Heladas, SpiritBox</li>
+                                <li><b>Habilidad Especial:</b> El único fantasma que puede dar una evidencia extra. Puede copiar el comportamiento de cualquier otro fantasma. No cambia su comportamiento en mitad de una cacería.</li>
+                                <li><b>Evidencia Asegurada:</b> Siempre tiene Orbes de Fantasma como evidencia extra(Por lo tanto, en una partida normal de 3 evidencias, el Mímico tendría 4 evidencias).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoroi" aria-expanded="false" aria-controls="collapseMoroi">
+                            Moroi.
+                        </button>
+                    </h2>
+                    <div id="collapseMoroi" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Spirit Box, Escritura Fantasmal, Temperaturas Heladas.</li>
+                                <li><b>Habilidad Especial:</b> Se vuelve más rápido conforme baja la cordura promedio (puede alcanzar hasta 3.71 m/s). Puede maldecir a un jugador si este escucha su voz a través de la Spirit Box o el micrófono parabólico: La drenación de cordura se duplica y no se detiene ni en la luz. El efecto desaparece si el jugador toma Pastillas de Cordura. Si se usa un Incienso durante una cacería, el Moroi no puede ver ni matar jugadores por 12 segundos (otros fantasmas solo 6 segundos).</li>
+                                <li><b>Evidencia Asegurada:</b> Spirit Box.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeogen" aria-expanded="false" aria-controls="collapseDeogen">
+                            Deogen
+                        </button>
+                    </h2>
+                    <div id="collapseDeogen" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Spirit Box, Escritura Fantasmal, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Siempre sabe dónde está el jugador. Corre muy rápido si está lejos del jugador, pero es extremadamente lento cuando se acerca.</li>
+                                <li><b>Evidencia Asegurada:</b> Spirit Box.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordionFantasmasItem">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThaye" aria-expanded="false" aria-controls="collapseThaye">
+                            Thaye
+                        </button>
+                    </h2>
+                    <div id="collapseThaye" class="accordion-collapse collapse" data-bs-parent="#accordionFantasmas">
+                        <div class="accordion-body accordionFantasmaBody">
+                            <ul class="listaFantasma">
+                                <li><b>Evidencias:</b> Orbes Fantasmales, Escritura Fantasmal, D.O.T.S.</li>
+                                <li><b>Habilidad Especial:</b> Al inicio es muy agresivo y rápido, pero se debilita con el tiempo si el jugador se encuentra en la habitacion de el fantasma.</li>
+                                <li><b>Evidencia Asegurada:</b> Ninguna.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <footer class="footerContenido text-center text-light py-2 border-top border-primary">
+        <div class="container">
+            <h3 class="fs-4 fw-bold">PhasmoGuide</h3>
+            <p class=" small mb-1">
+                Esta guía de Phasmophobia está bajo la 
+                <a class="linkLicencia" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)
+                </a>. Puedes compartir y adaptar el contenido siempre que menciones la fuente.
+            </p>
+            <p class="small mb-2">Imágenes capturadas en mis partidas.</p>
+            <div class="d-flex justify-content-center gap-2">
+                <a class="socialLink" href="https://x.com" target="_blank">
+                    <img src="img/icons/twitter-x.svg" alt="X" class="social-icon">
+                </a>
+                <a class="socialLink" href="https://www.youtube.com" target="_blank">
+                    <img src="img/icons/youtube.svg" alt="YouTube" class="social-icon">
+                </a>
+                <a class="socialLink" href="https://discord.com" target="_blank">
+                    <img src="img/icons/discord.svg" alt="Discord" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
