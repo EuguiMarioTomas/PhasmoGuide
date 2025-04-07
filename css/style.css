@@ -424,6 +424,9 @@ button:hover{
             max-width: 90%;
         }
         /*EQUIPAMIENTO*/
+        .mobileLandscape{
+            text-align: center;
+        }
         .equipamientoIntro{
             flex-direction: column;
             margin: 0 auto;
