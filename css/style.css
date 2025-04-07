@@ -403,7 +403,12 @@ button:hover{
         display: none !important; 
     }
 }
-
+/*Query para quitar el sidebar en mobile*/
+@media only screen and (max-width:978){
+    .stickySidebar{
+        display: none;
+    }
+}
 
 /*TABLETS*/
 @media only screen and (min-width: 481px) and (max-width: 978px){
