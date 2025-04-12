@@ -1,4 +1,3 @@
-//Actualmente no esta incluido en el sitio web debido a que no es necesario y solo era una prubea para ver si funcionaba
 
 document.getElementById("tipsForm").addEventListener("submit", function(event) {
     event.preventDefault(); //Evita que la página se recargue
