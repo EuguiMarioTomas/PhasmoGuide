@@ -17,10 +17,11 @@ body{
 .navbar-brand{
     font-family: "Jolly Lodger", serif;
     font-size: 34px;
+    color: #fff;
 }
 .navbar-nav a{
     font-size: 24px;
-    color: #fff;
+    color: #fff; 
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
@@ -203,6 +204,26 @@ body{
     list-style: none;
     text-decoration: none;
     color:#fff;
+}
+.accordionSideNavbarItem{
+    background-color: #0D0B32;
+    border: 2px solid #0066ff;
+}
+.accordionSideNavbarButton{
+    background-color: #110e46;
+    color: #fff !important;
+    border: none;
+}
+.accordionSideNavbarButton:not(.collapsed){
+    background-color: #0066ff;
+    color: #fff !important;
+}
+.accordioSideNavbarBody{
+    background-color: #0D0B32 !important;
+    color: #fff !important;
+}
+.accordionSideNavbarButton:focus{
+    box-shadow: none !important;
 }
 
 /*FANTASMAS*/
