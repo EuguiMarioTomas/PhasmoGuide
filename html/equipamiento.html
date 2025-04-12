@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icons/iconPhasmoGuide.ico"> 
     <title>PhasmoGuide</title>
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,40 +41,69 @@
         <div class="row">                
             <nav class="col-md-3 col-lg-2 d-md-block sidebar vh-100 p-3 sticky-top stickySidebar" id="navEquipamiento">
                 <ul class="nav flex-column">
-                    <li><a href="#equipamientoNav" class="">Inicio</a></li>
-                    <hr class="d-none d-md-block my-0 me-5">
-                    <li><a href="#esencialApoyo" class="">Esencial y Apoyo</a>
-                        <ul>
-                            <li><a href="#linterna" class="">Linterna</a></li>
-                            <li><a href="#equipParaLaCabeza" class="">Equipamiento para la Cabeza</a></li>
-                            <li><a href="#tripode" class="">Tripode</a></li>
-                            <li><a href="#camaraDeFotos" class="">Camara de Fotos</a></li>
-                            <li><a href="#sensorDeMovimiento" class="">Sensor de Movimiento</a></li>
-                            <li><a href="#microfonoParabolico" class="">Microfono Parabolico</a></li>
-                            <li><a href="#sensorDeSonidos" class="">Sensor de Sonidos</a></li>
-                            <li><a href="#encendedor" class="">Encendedor</a></li>
-                            <li><a href="#velas" class="">Velas</a></li>
-                            <li><a href="#sal" class="">Sal</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#deteccionEvidencias">Deteccion de Evidencias</a>
-                        <ul>
-                            <li><a href="#emf" class="">EMF</a></li>
-                            <li><a href="#termometro" class="">Termometro</a></li>
-                            <li><a href="#linternaUv" class="">Linterna UV</a></li>
-                            <li><a href="#spiritBox" class="">SpiritBox</a></li>
-                            <li><a href="#libroEscrituraFantasmal" class="">Libro de Escritura Fantasmal</a></li>
-                            <li><a href="#proyectorDots" class="">Proyector Dots</a></li>
-                            <li><a href="#camaraDeVideos" class="">Camara de Videos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#proteccionSupervivencia">Proteccion y Supervivencia</a>
-                        <ul>
-                            <li><a href="#incienso" class="">Incienso</a></li>
-                            <li><a href="#crucifijo" class="">Crucifijo</a></li>
-                            <li><a href="#medicacionCordura" class="">Medicacion para la Cordura</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#equipamientoNav" class="">Inicio</a></li>         
+
+                    <div class="accordion" id="navbarAccordion">
+                        <div class="accordion-item accordionFantasmasItem">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEsencialApoyo" aria-expanded="false" aria-controls="collapseEsencialApoyo">
+                                    Esencial Y Apoyo.
+                                </button>
+                            </h2>
+                            <div id="collapseEsencialApoyo" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                                <div class="accordion-body accordionFantasmaBody">
+                                    <ul>
+                                        <li><a href="#linterna" class="linkSideBar">Linterna</a></li>
+                                        <li><a href="#equipParaLaCabeza" class="linkSideBar">Equipamiento para la Cabeza</a></li>
+                                        <li><a href="#tripode" class="linkSideBar">Tripode</a></li>
+                                        <li><a href="#camaraDeFotos" class="linkSideBar">Camara de Fotos</a></li>
+                                        <li><a href="#sensorDeMovimiento" class="linkSideBar">Sensor de Movimiento</a></li>
+                                        <li><a href="#microfonoParabolico" class="linkSideBar">Microfono Parabolico</a></li>
+                                        <li><a href="#sensorDeSonidos" class="linkSideBar">Sensor de Sonidos</a></li>
+                                        <li><a href="#encendedor" class="linkSideBar">Encendedor</a></li>
+                                        <li><a href="#velas" class="linkSideBar">Velas</a></li>
+                                        <li><a href="#sal" class="linkSideBar">Sal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordionFantasmasItem">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeteccionEvidencias" aria-expanded="false" aria-controls="collapseDeteccionEvidencias">
+                                    Deteccion de Evidencias.
+                                </button>
+                            </h2>
+                            <div id="collapseDeteccionEvidencias" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                <div class="accordion-body accordionFantasmaBody">
+                                    <ul>
+                                        <li><a href="#emf" class="">EMF</a></li>
+                                        <li><a href="#termometro" class="">Termometro</a></li>
+                                        <li><a href="#linternaUv" class="">Linterna UV</a></li>
+                                        <li><a href="#spiritBox" class="">SpiritBox</a></li>
+                                        <li><a href="#libroEscrituraFantasmal" class="">Libro de Escritura Fantasmal</a></li>
+                                        <li><a href="#proyectorDots" class="">Proyector Dots</a></li>
+                                        <li><a href="#camaraDeVideos" class="">Camara de Videos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item accordionFantasmasItem">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordionFantasmasButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProteccionSupervivencia" aria-expanded="false" aria-controls="collapseProteccionSupervivencia">
+                                    Proteccion y Supervivencia
+                                </button>
+                            </h2>
+                            <div id="collapseProteccionSupervivencia" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                                <div class="accordion-body accordionFantasmaBody">
+                                    <ul>
+                                        <li><a href="#incienso" class="">Incienso</a></li>
+                                        <li><a href="#crucifijo" class="">Crucifijo</a></li>
+                                        <li><a href="#medicacionCordura" class="">Medicacion para la Cordura</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </nav>
             <!--CONTENIDO-->
