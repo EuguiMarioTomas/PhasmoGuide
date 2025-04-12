@@ -203,11 +203,15 @@ body{
 #navEquipamiento ul, a{
     list-style: none;
     text-decoration: none;
+    font-size: 18px;
     color:#fff;
 }
 .accordionSideNavbarItem{
     background-color: #0D0B32;
     border: 2px solid #0066ff;
+}
+.accordionSideNavbarItem button{
+    font-size: 18px;
 }
 .accordionSideNavbarButton{
     background-color: #110e46;
