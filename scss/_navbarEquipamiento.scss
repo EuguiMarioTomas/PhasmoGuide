@@ -1,0 +1,52 @@
+@use 'variables';
+@use 'mediaQuery';
+
+.sidebar{
+    background-color: variables.$backgroundColor;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 4px solid variables.$borderColor;
+    padding: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    ul, a{
+        list-style: none;
+        text-decoration: none;
+        font-size: 18px;
+        color:#fff;
+    }
+    .accordionSideNavbarItem{
+        background-color: transparent;
+        border: 2px solid variables.$borderColor;
+        .accordionSideNavbarButton{
+            pointer-events: none;
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            &:focus{
+                box-shadow: none;
+            }
+            &:not(.collapsed){
+                color: white;
+            }
+        }
+        .accordionSideNavbarBody{
+            background-color: transparent;
+            padding-left: 1rem;
+            .linkSideBar{
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 1rem;
+                display: block;
+                margin: 0.2rem 0;
+                transition: color 0.3s;
+                &:hover{
+                    color: #00bfff; // un azul más clarito al pasar el mouse
+                }
+            }
+        }
+    }
+}

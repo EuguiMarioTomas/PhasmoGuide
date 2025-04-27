@@ -1,0 +1,44 @@
+@use 'variables';
+@use 'navbar-footer';
+
+.fantasma{
+    .fantasmaIntro{
+        p{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img{
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+    }
+    .accordionFantasmasItem{
+        background-color: variables.$accordionFantasmaBgColor;
+        border: 2px solid variables.$borderColor;
+        .accordionFantasmasButton{
+            background-color: variables.$accordionFantasmaBgColor;
+            color: #fff !important;
+            border: none;
+            :not(.collapsed){
+                background-color: variables.$accordionFantasmaBgColor;
+                color: #fff !important;
+            }
+        }
+        .accordionFantasmaBody{
+            background-color: variables.$accordionFantasmaBgColor !important;
+            color: #fff !important;
+            :focus{
+                box-shadow: none !important;
+            }
+        }
+    }
+}

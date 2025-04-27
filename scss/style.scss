@@ -1,0 +1,21 @@
+@use 'variables';
+@use 'navbar-footer';
+@use 'index';
+@use 'equipamiento';
+@use 'navbarEquipamiento';
+@use 'fantasmas';
+@use 'objetosMalditos';
+@use 'comentarios';
+@use 'mediaQuery';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050415;
+    color: #fff;
+    font-family: "Jockey One", serif;
+    overflow: auto;
+}

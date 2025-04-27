@@ -1,0 +1,37 @@
+@use 'variables';
+
+.navBar{
+    background-color: variables.$navBarFooterBackColor;
+    border-bottom: 2px solid variables.$borderColor;
+
+    .navBarTitulo{
+        font-size: 34px;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    .navBarLista a{
+        font-size: 24px;
+        border-radius: 5px;
+        transition: background 0.3s ease, transform 0.2s ease;
+        color: #fff;
+        &:hover{
+            background-color: #0066ff;
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+    }
+}
+.footerContenido{
+    background-color: variables.$navBarFooterBackColor;
+    .socialIcon{
+        width:24px;
+        height:24px;
+        filter: invert(1);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

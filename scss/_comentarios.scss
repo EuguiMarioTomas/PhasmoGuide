@@ -1,0 +1,51 @@
+@use 'variables';
+@use 'navbar-footer';
+
+.formContenido{
+    width: 50%;
+    margin:50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px variables.$formBoxShadow;
+    color: #fff;
+    margin-bottom: 50px;
+    #tipsForm{
+        input, textarea{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        textarea{
+            height: 100px;
+        }
+        button{
+            background-color: variables.$buttonBgColor;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            &:hover{
+                background-color: variables.$borderColor;
+            }
+        }
+    }
+    #tipsTable{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        th, td{
+            border: 1px solid variables.$borderColor;
+            padding: 10px;
+            text-align: left;
+        }
+        th{
+            color: white;
+        }
+    }
+}

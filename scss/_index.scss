@@ -1,0 +1,64 @@
+@use 'navbar-footer';
+@use 'variables';
+@use 'mediaQuery';
+
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .imgPhasmoIntro{
+        display: block;
+        width: 100%;
+        max-width: 60%;
+        margin: 20px auto;
+    }
+    .imgIntroSecundarias{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 48%;
+            border-radius: 10px;
+        }
+    }
+}
+.consejos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    h2{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .listaConsejos{
+        list-style: none;
+        width: 80%;
+        margin: auto;
+        li{
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+    }
+}
+.imgIntroTerciaria{
+    img{
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+}

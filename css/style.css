@@ -1,491 +1,489 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.navBar {
+  background-color: #0D0B32;
+  border-bottom: 2px solid #0066ff;
 }
-body{
-    background-color: #050415;
-    color: #fff;
-    font-family: "Jockey One", serif;
-    overflow: auto;
+.navBar .navBarTitulo {
+  font-size: 34px;
 }
-/*NAVBAR*/
-.navbar{
-    background-color: #0D0B32;
-    border-bottom: 2px solid #0066ff; 
+.navBar .navBarTitulo:hover {
+  transform: scale(1.05);
 }
-.navbar-brand{
-    font-family: "Jolly Lodger", serif;
-    font-size: 34px;
-    color: #fff;
+.navBar .navBarLista a {
+  font-size: 24px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color: #fff;
 }
-.navbar-nav a{
-    font-size: 24px;
-    color: #fff; 
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.2s ease;
+.navBar .navBarLista a:hover {
+  background-color: #0066ff;
+  transform: scale(1.05);
 }
-.navbar-nav a:hover{
-    background-color: #0066ff;
-    transform: scale(1.05);
-}
-.navbar-nav a:active{
-    transform: scale(0.95);
-}
-.navbar-toggler:focus, .navbar-toggler:active{
-    outline: none;
-    box-shadow: 0 0 5px #0066ff;
+.navBar .navBarLista a:active {
+  transform: scale(0.95);
 }
 
-/*INDEX.HTML*/
-.introduccion{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.footerContenido {
+  background-color: #0D0B32;
 }
-.introduccion h1{
-    font-size: 50px;
-    font-family: "Jolly Lodger", serif;
-    margin-bottom: 20px;
+.footerContenido .socialIcon {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
 }
-.introduccion p{
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-.imgPhasmoIntro{
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-}
-.imgSecundarias{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.imgSecundarias img{
-    width: 48%;
-    border-radius: 10px;
-}
-.consejos{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-}
-.consejos h2{
-    font-family: "Jolly Lodger", serif;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-.listaConsejos{
-    list-style: none;
-    width: 80%;
-    margin: auto;
-}
-.listaConsejos li{
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-.imgTerciaria img{
-    display: block;
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    border-radius: 10px;
+.footerContenido .socialIcon:hover {
+  transform: scale(1.1);
 }
 
-
-/*EQUIPAMIENTO*/
-.equipamiento h1{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Jolly Lodger", serif;
-}
-.equipamientoIntro{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.equipamientoIntro p{
-    width: 60%;
-    text-align: justify;
-    font-size: 24px;
-}
-.equipamientoIntro img{
-    width: 35%;
-    border-radius: 10px;
-}
-.imagPhasmoEquipamiento{
-    display: block;
-    width: 100%;
-    max-width: 900px;
-    margin: 30px auto;
-    border-radius: 10px;
-}
-/*EQUIPAMIENTO INTRO DETALLADO*/
-.equipamientoDetallado{
-    background-color: rgba(0, 0, 255, 0.11);
-    border-radius: 10px;
-    border: 4px solid #0066ff;
-}
-.equipamientoDetallado h2{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    margin: 40px 0 10px;
-    font-family: "Jolly Lodger", serif;
-    text-decoration: underline;
-}
-.equipamientoDetallado h3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-family: "Jolly Lodger", serif;
-    text-decoration: underline;
-}
-.equipamientoDetallado p{
-    font-size: 24px;
-}
-.equipamientoDetallado ul{
-    font-size: 20px;
-}
-.listaNiveles{
-    list-style-type: none;
-}
-.equipamientoDetallado strong, b{
-    text-decoration: underline;
-}
-/* EQUIPAMIENTO DETALLADO*/
-.equipamientoDescripcion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-.imgEquipDescripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 35%;
-    padding: 10px;
-    gap: 10px;
-}
-.imgEquipDescripcion img{
-    width: auto;
-    height: 25vh;
-    border-radius: 10px;
-}
-.equipamientoCaracterizacion{
-    width: 60%;
-    text-align: justify;
-    border-left: 4px solid #0066ff;
-    background-color: rgba(0, 0, 255, 0.164);
-    border-radius: 5px;
-}
-/*NAV EQUIPAMIENTO*/
-#navEquipamiento{
-    background-color: rgba(0, 0, 255, 0.11);
-    border-radius: 10px;
-}
-#navEquipamiento ul, a{
-    list-style: none;
-    text-decoration: none;
-    font-size: 18px;
-    color:#fff;
-}
-.accordionSideNavbarItem{
-    background-color: #0D0B32;
-    border: 2px solid #0066ff;
-}
-.accordionSideNavbarItem button{
-    font-size: 18px;
-}
-.accordionSideNavbarButton{
-    background-color: #110e46;
-    color: #fff !important;
-    border: none;
-}
-.accordionSideNavbarButton:not(.collapsed){
-    background-color: #0066ff;
-    color: #fff !important;
-}
-.accordioSideNavbarBody{
-    background-color: #0D0B32 !important;
-    color: #fff !important;
-}
-.accordionSideNavbarButton:focus{
-    box-shadow: none !important;
-}
-
-/*FANTASMAS*/
-.listaFantasma{
-    list-style-type: none;
-}
-.fantasmaIntro p{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.fantasmaIntro h1{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Jolly Lodger", serif;
-}
-.fantasmaIntro img{
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-.accordionFantasmasItem{
-    background-color: #0D0B32;
-    border: 2px solid #0066ff;
-}
-.accordionFantasmasButton{
-    background-color: #110e46;
-    color: #fff !important;
-    border: none;
-}
-.accordionFantasmasButton:not(.collapsed){
-    background-color: #0066ff;
-    color: #fff !important;
-}
-.accordionFantasmaBody{
-    background-color: #0D0B32 !important;
-    color: #fff !important;
-}
-.accordionFantasmasButton:focus{
-    box-shadow: none !important;
-}
-
-/*OBJETOS MALDITOS*/
-.tituloObjMalditos{
-    text-align: center;
-    font-size: 2rem;
-}
-.textoIntroObjMalditos{
-    text-align: center;
-    font-size: 1.2rem;
-}
-.imgTodosObjMalditos{
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-}
-/*CARTAS TAROT*/
-.card img{
-    width: 100%;
-    height: 350px;
-    border-radius: 15px;
-}
-.cartasTarot{
-    background-color: rgba(0, 0, 255, 0.11);
-    border-left: 7px solid #0066ff;
-    border-radius: 15px;
-    color:#fff;
-}
-
-/*OBJETO MALDITO */ 
-.cardObjetoMaldito { 
-    background-color: rgba(0, 0, 255, 0.11);
-    border-left: 7px solid #0066ff;
-    border-radius: 10px; 
-    color: #fff;
-}
-
-/*COMENTARIOS*/
-.formContenido{
-    width: 50%;
-    margin:50px auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.90);
-    color: #fff;
-    margin-bottom: 50px;
-}
-#tipsForm input, textarea{
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-}
-#tipsForm textarea{
-    height: 100px;
-}
-#tipsTable{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-#tipsTable th, #tipsTable td{
-    border: 1px solid #0066ff;
-    padding: 10px;
-    text-align: left;
-}
-#tipsTable th {
-    color: white;
-}
-button{
-    background-color: rgba(0, 0, 255, 0.164);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button:hover{
-    background-color: #0066ff;
-}
-
-/* FOOTER */
-.footerContenido{
-    background-color: #0D0B32;
-}
-.footerContenido h3{
-    font-family: "Jolly Lodger", serif;
-}
-.linkLicencia{
-    color:#9370db;
-}
-.linkLicencia:hover{
-    color: #ffcc00; 
-}
-.social-icon{
-    width:24px;
-    height:24px;
-    filter: invert(1);
-    transition: transform 0.3s ease-in-out;
-}
-.social-icon:hover{
-    transform: scale(1.1);
-}
 /*MOBILE*/
-@media only screen and (max-width: 480px){
-    /*INDEX*/
-    .introduccion{
-        text-align: center;
-    }
-    .imgSecundarias{
-        display:none;
-    }
-    .listaConsejos{
-        width: 100%;
-    }
-    .listaConsejos li{
-        text-align: center;
-        width: 100%;
-        max-width: 90%;
-    }
-    /*EQUIPAMIENTO*/
-    .equipamientoIntro{
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .equipamientoIntro p{
-        max-width: 100%;
-        width: 90%;
-        text-align: center;
-    }
-    .equipamientoIntro img{
-        display: none;
-    }
-    .equipamientoDetallado{
-        border: none;
-        background: none;
-    }
-    .equipamientoDescripcion{
-        flex-direction: row;
-    }
-    .imgEquipDescripcion{
-        display: none;
-    }
-    .equipamientoCaracterizacion{
-        max-width: 100%;
-        width: 100%;
-        text-align: start;
-        margin-bottom: 20px;
-    }
-    .stickySidebar{
-        display: none !important; 
-    }
+@media only screen and (max-width: 480px) {
+  .introduccion {
+    text-align: center;
+  }
+  .introduccion .imgIntroSecundarias {
+    display: none;
+  }
+  .consejos .listaConsejos li {
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
+  }
+  .equipamientoIntro {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .equipamientoIntro .equipamientoIntroTexto p {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto img {
+    display: none;
+  }
+  .equipamientoDetallado {
+    border: none;
+    background: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion {
+    flex-direction: column;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+    max-width: 100%;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion img {
+    display: none;
+  }
+  .sidebar {
+    display: none !important;
+  }
+}
+/*TABLETS y LANDSCAPE*/
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  .mobileLandscape .equipamientoContenido {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .introduccion {
+    text-align: center;
+  }
+  .introduccion .imgIntroSecundarias {
+    display: flex;
+    flex-direction: column;
+  }
+  .introduccion .imgIntroSecundarias img {
+    width: 90%;
+    margin: 10px 0 10px 0;
+  }
+  .consejos .listaConsejos li {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .equipamientoIntro {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .equipamientoIntro .equipamientoIntroTexto p {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto img {
+    display: none;
+  }
+  .equipamientoDetallado {
+    border: none;
+    background: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+    max-width: 100%;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion img {
+    display: none;
+  }
+  .sidebar {
+    display: none !important;
+  }
+}
+@media (max-width: 1366px) and (max-height: 768px) {
+  .sidebar {
+    overflow-y: scroll;
+    border: none;
+    border-radius: none;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 5px;
+  }
+  .sidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #0066ff;
+  }
+  .sidebar::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 255, 0.1098039216);
+  }
+}
+.introduccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduccion h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.introduccion p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.introduccion .imgPhasmoIntro {
+  display: block;
+  width: 100%;
+  max-width: 60%;
+  margin: 20px auto;
+}
+.introduccion .imgIntroSecundarias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduccion .imgIntroSecundarias img {
+  width: 48%;
+  border-radius: 10px;
 }
 
-/*TABLETS*/
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    /*INDEX*/
-    .introduccion{
-        text-align: center;
-    }
-    .imgSecundarias{
-        display: flex;
-        flex-direction: column;
-    }
-    .imgSecundarias img{
-        width: 90%;
-        margin: 10px 0 10px 0;
-    }
-    .listaConsejos li{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    
-    /*EQUIPAMIENTO*/
-    .mobileLandscape .col-md-9{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .equipamientoIntro{
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .equipamientoIntro p{
-        max-width: 100%;
-        width: 90%;
-        text-align: center;
-    }
-    .equipamientoIntro img{
-        display: none;
-    }
-    .equipamientoDetallado{
-        border: none;
-        background: none;
-    }
-    .equipamientoDescripcion{
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    .imgEquipDescripcion{
-        display: none;
-    }
-
-    .equipamientoCaracterizacion{
-        max-width: 100%;
-        width: 100%;
-        text-align: start;
-        margin-bottom: 20px;
-    }
-    .stickySidebar{
-        display: none !important; 
-    }
+.consejos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
+.consejos h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.consejos .listaConsejos {
+  list-style: none;
+  width: 80%;
+  margin: auto;
+}
+.consejos .listaConsejos li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.imgIntroTerciaria img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  border-right: 4px solid #0066ff;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px;
+}
+.sidebar ul, .sidebar a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar .accordionSideNavbarItem {
+  background-color: transparent;
+  border: 2px solid #0066ff;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarButton {
+  pointer-events: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarButton:focus {
+  box-shadow: none;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarButton:not(.collapsed) {
+  color: white;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarBody {
+  background-color: transparent;
+  padding-left: 1rem;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarBody .linkSideBar {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin: 0.2rem 0;
+  transition: color 0.3s;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarBody .linkSideBar:hover {
+  color: #00bfff;
+}
+
+.equipamientoIntro .tituloEquipamiento {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.equipamientoIntro .equipamientoIntroTexto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.equipamientoIntro .equipamientoIntroTexto p {
+  width: 60%;
+  text-align: justify;
+  font-size: 24px;
+}
+.equipamientoIntro .equipamientoIntroTexto img {
+  width: 35%;
+  border-radius: 10px;
+}
+.equipamientoIntro .imagPhasmoEquipamiento {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.equipamientoDetallado {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  border-radius: 10px;
+  border: 4px solid #0066ff;
+}
+.equipamientoDetallado h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  margin: 40px 0 10px;
+  text-decoration: underline;
+}
+.equipamientoDetallado h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.equipamientoDetallado p {
+  font-size: 24px;
+}
+.equipamientoDetallado ul {
+  font-size: 20px;
+}
+.equipamientoDetallado .listaNiveles {
+  list-style-type: none;
+}
+.equipamientoDetallado strong, .equipamientoDetallado b {
+  text-decoration: underline;
+}
+.equipamientoDetallado .equipamientoDescripcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+  width: 60%;
+  text-align: justify;
+  border-left: 4px solid #0066ff;
+  background-color: rgba(0, 0, 255, 0.1647058824);
+  border-radius: 5px;
+}
+.equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+  padding: 10px;
+  gap: 10px;
+}
+.equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion img {
+  width: auto;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+.fantasma .fantasmaIntro p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.fantasma .fantasmaIntro h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fantasma .fantasmaIntro img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.fantasma .accordionFantasmasItem {
+  background-color: #110e46;
+  border: 2px solid #0066ff;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmasButton {
+  background-color: #110e46;
+  color: #fff !important;
+  border: none;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmasButton :not(.collapsed) {
+  background-color: #110e46;
+  color: #fff !important;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmaBody {
+  background-color: #110e46 !important;
+  color: #fff !important;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmaBody :focus {
+  box-shadow: none !important;
+}
+
+.objetosMalditos .tituloObjMalditos {
+  text-align: center;
+  font-size: 2rem;
+}
+.objetosMalditos .textoIntroObjMalditos {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.objetosMalditos .imgTodosObjMalditos {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.objetosMalditos .cartasTarot {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  border-left: 7px solid #0066ff;
+  border-radius: 15px;
+  color: #fff;
+}
+.objetosMalditos .cartasTarot img {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+}
+.objetosMalditos .cardObjetoMaldito {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  border-left: 7px solid #0066ff;
+  border-radius: 10px;
+  color: #fff;
+}
+.objetosMalditos .cardObjetoMaldito img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.formContenido {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.9019607843);
+  color: #fff;
+  margin-bottom: 50px;
+}
+.formContenido #tipsForm input, .formContenido #tipsForm textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.formContenido #tipsForm textarea {
+  height: 100px;
+}
+.formContenido #tipsForm button {
+  background-color: rgba(0, 0, 255, 0.1647058824);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.formContenido #tipsForm button:hover {
+  background-color: #0066ff;
+}
+.formContenido #tipsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.formContenido #tipsTable th, .formContenido #tipsTable td {
+  border: 1px solid #0066ff;
+  padding: 10px;
+  text-align: left;
+}
+.formContenido #tipsTable th {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050415;
+  color: #fff;
+  font-family: "Jockey One", serif;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
