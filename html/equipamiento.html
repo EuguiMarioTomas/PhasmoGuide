@@ -20,14 +20,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top navBar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">PhasmoGuide</a>
+                <a class="navbar-brand navBarTitulo" href="../index.html">PhasmoGuide</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav navBarLista">
                         <li class="nav-item"><a class="nav-link" href="equipamiento.html">Equipamiento</a></li>
                         <li class="nav-item"><a class="nav-link" href="fantasmas.html">Fantasmas</a></li>
                         <li class="nav-item"><a class="nav-link" href="objetosMalditos.html">Objetos Malditos</a></li>
@@ -39,81 +39,13 @@
     </header>
     <main class="container-fluid mobileLandscape">
         <div class="row">                
-            <nav class="col-md-3 col-lg-2 d-md-block sidebar vh-100 p-3 sticky-top stickySidebar" id="navEquipamiento">
-                <ul class="nav flex-column">
-                    <li><a href="#equipamientoNav" class="">Inicio</a></li>         
-
-                    <div class="accordion" id="navbarAccordion">
-                        <div class="accordion-item accordionSideNavbarItem">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEsencialApoyo" aria-expanded="false" aria-controls="collapseEsencialApoyo">
-                                    Esencial Y Apoyo.
-                                </button>
-                            </h2>
-                            <div id="collapseEsencialApoyo" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
-                                <div class="accordion-body accordionSideNavbarBody">
-                                    <ul>
-                                        <li><a href="#linterna" class="linkSideBar">Linterna</a></li>
-                                        <li><a href="#equipParaLaCabeza" class="linkSideBar">Equipamiento para la Cabeza</a></li>
-                                        <li><a href="#tripode" class="linkSideBar">Tripode</a></li>
-                                        <li><a href="#camaraDeFotos" class="linkSideBar">Camara de Fotos</a></li>
-                                        <li><a href="#sensorDeMovimiento" class="linkSideBar">Sensor de Movimiento</a></li>
-                                        <li><a href="#microfonoParabolico" class="linkSideBar">Microfono Parabolico</a></li>
-                                        <li><a href="#sensorDeSonidos" class="linkSideBar">Sensor de Sonidos</a></li>
-                                        <li><a href="#encendedor" class="linkSideBar">Encendedor</a></li>
-                                        <li><a href="#velas" class="linkSideBar">Velas</a></li>
-                                        <li><a href="#sal" class="linkSideBar">Sal</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item accordionSideNavbarItem">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeteccionEvidencias" aria-expanded="false" aria-controls="collapseDeteccionEvidencias">
-                                    Deteccion de Evidencias.
-                                </button>
-                            </h2>
-                            <div id="collapseDeteccionEvidencias" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
-                                <div class="accordion-body accordionSideNavbarBody">
-                                    <ul>
-                                        <li><a href="#emf" class="">EMF</a></li>
-                                        <li><a href="#termometro" class="">Termometro</a></li>
-                                        <li><a href="#linternaUv" class="">Linterna UV</a></li>
-                                        <li><a href="#spiritBox" class="">SpiritBox</a></li>
-                                        <li><a href="#libroEscrituraFantasmal" class="">Libro de Escritura Fantasmal</a></li>
-                                        <li><a href="#proyectorDots" class="">Proyector Dots</a></li>
-                                        <li><a href="#camaraDeVideos" class="">Camara de Videos</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item accordionSideNavbarItem">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProteccionSupervivencia" aria-expanded="false" aria-controls="collapseProteccionSupervivencia">
-                                    Proteccion y Supervivencia
-                                </button>
-                            </h2>
-                            <div id="collapseProteccionSupervivencia" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
-                                <div class="accordion-body accordionSideNavbarBody">
-                                    <ul>
-                                        <li><a href="#incienso" class="">Incienso</a></li>
-                                        <li><a href="#crucifijo" class="">Crucifijo</a></li>
-                                        <li><a href="#medicacionCordura" class="">Medicacion para la Cordura</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </nav>
             <!--CONTENIDO-->
-            <section class="col-md-9 col-lg-10 p-4">
-                <section class="equipamiento" id="equipamientoNav">
-                    <h1>Equipamiento</h1>
-                    <div class="equipamientoIntro">
+            <section class="col-md-9 col-lg-9 col-xxl-10 p-4 equipamientoContenido">
+                <section class="equipamientoIntro" id="equipamientoNav">
+                    <h1 class="tituloEquipamiento">Equipamiento</h1>
+                    <div class="equipamientoIntroTexto">
                         <p>En Phasmophobia, el equipamiento juega un papel fundamental en la investigación paranormal. Cada herramienta está diseñada para ayudar a los jugadores a detectar, identificar y recopilar evidencia sobre la entidad que habita en la ubicación. Desde dispositivos tecnológicos como el EMF Reader y la Spirit Box, hasta herramientas tradicionales como la Sal, cada objeto tiene una función específica que permite a los cazafantasmas acercarse a la verdad… o a su perdición.
                         Elegir el equipo adecuado y saber cómo usarlo correctamente puede marcar la diferencia entre una investigación exitosa y un encuentro mortal con el fantasma. En este artículo, exploraremos los diferentes tipos de equipamiento disponibles y cada uno de sus niveles, su propósito y cómo usarlos de manera efectiva para descubrir qué entidad está acechando en la oscuridad.</p>
-        
                         <img src="../img/phasmophobia04.jpg" alt="Imagen de Phasmophobia">
                     </div>
                     <img class="imagPhasmoEquipamiento" src="../img/equipamiento01.jpg" alt="Equipamiento Phasmophobia Imagen">
@@ -176,7 +108,7 @@
                                 <img src="../img/equipamiento/camaraDeFotos/nivel03.jpg" alt="Imagen Camara de Video Nivel 03">
                             </div>
                             <div class="equipamientoCaracterizacion">
-                                <p><strong>Camara de Fotos:</strong> Cámara de Fotos : Captura evidencia como interacciones, huellas, cadáveres de jugadores y el fantasma mismo para obtener recompensas adicionales.</p>
+                                <p><strong>Camara de Fotos:</strong> Captura evidencia como interacciones, huellas, cadáveres de jugadores y el fantasma mismo para obtener recompensas adicionales.</p>
                                 <ul class="listaNiveles">
                                     <li><b>Nivel 01:</b> Solo interferirá con el fantasma en el momento en el que saques la fotografia. Tiene un tiempo de 3Seg entre cada fotografia tomada.</li>
                                     <li><b>Nivel 02:</b> Tiene una resistencia paranormal media y su tiempo entre cada fotografia es de 2Seg.</li>
@@ -456,9 +388,72 @@
                     </div>
                 </section>
             </section>
+            <nav class="col-md-3 col-lg-3 col-xxl-2 d-md-block vh-100 p-3 sticky-top sidebar">
+                <div class="accordion" id="navbarAccordion">
+                    <div class="accordion-item accordionSideNavbarItem">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEsencialApoyo" aria-expanded="false" aria-controls="collapseEsencialApoyo">
+                                Esencial Y Apoyo.
+                            </button>
+                        </h3>
+                        <div id="collapseEsencialApoyo" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body accordionSideNavbarBody">
+                                <ul>
+                                    <li><a href="#linterna" class="linkSideBar">Linterna</a></li>
+                                    <li><a href="#equipParaLaCabeza" class="linkSideBar">Equipamiento para la Cabeza</a></li>
+                                    <li><a href="#tripode" class="linkSideBar">Tripode</a></li>
+                                    <li><a href="#camaraDeFotos" class="linkSideBar">Camara de Fotos</a></li>
+                                    <li><a href="#sensorDeMovimiento" class="linkSideBar">Sensor de Movimiento</a></li>
+                                    <li><a href="#microfonoParabolico" class="linkSideBar">Microfono Parabolico</a></li>
+                                    <li><a href="#sensorDeSonidos" class="linkSideBar">Sensor de Sonidos</a></li>
+                                    <li><a href="#encendedor" class="linkSideBar">Encendedor</a></li>
+                                    <li><a href="#velas" class="linkSideBar">Velas</a></li>
+                                    <li><a href="#sal" class="linkSideBar">Sal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordionSideNavbarItem">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeteccionEvidencias" aria-expanded="false" aria-controls="collapseDeteccionEvidencias">
+                                Deteccion de Evidencias.
+                            </button>
+                        </h3>
+                        <div id="collapseDeteccionEvidencias" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body accordionSideNavbarBody">
+                                <ul>
+                                    <li><a href="#emf" class="linkSideBar">EMF</a></li>
+                                    <li><a href="#termometro" class="linkSideBar">Termometro</a></li>
+                                    <li><a href="#linternaUv" class="linkSideBar">Linterna UV</a></li>
+                                    <li><a href="#spiritBox" class="linkSideBar">SpiritBox</a></li>
+                                    <li><a href="#libroEscrituraFantasmal" class="linkSideBar">Libro de Escritura Fantasmal</a></li>
+                                    <li><a href="#proyectorDots" class="linkSideBar">Proyector Dots</a></li>
+                                    <li><a href="#camaraDeVideos" class="linkSideBar">Camara de Videos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item accordionSideNavbarItem">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProteccionSupervivencia" aria-expanded="false" aria-controls="collapseProteccionSupervivencia">
+                                Proteccion y Supervivencia
+                            </button>
+                        </h3>
+                        <div id="collapseProteccionSupervivencia" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body accordionSideNavbarBody">
+                                <ul>
+                                    <li><a href="#incienso" class="linkSideBar">Incienso</a></li>
+                                    <li><a href="#crucifijo" class="linkSideBar">Crucifijo</a></li>
+                                    <li><a href="#medicacionCordura" class="linkSideBar">Medicacion para la Cordura</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     </main>
-    <footer class="footerContenido text-center text-light py-2 border-top border-primary">
+    <footer class="text-center text-light py-2 border-top border-primary footerContenido">
         <div class="container">
             <h3 class="fs-4 fw-bold">PhasmoGuide</h3>
             <p class=" small mb-1">
@@ -470,13 +465,13 @@
             <p class="small mb-2">Imágenes capturadas en mis partidas.</p>
             <div class="d-flex justify-content-center gap-2">
                 <a class="socialLink" href="https://x.com" target="_blank">
-                    <img src="../img/icons/twitter-x.svg" alt="X" class="social-icon">
+                    <img src="../img/icons/twitter-x.svg" alt="X" class="socialIcon">
                 </a>
                 <a class="socialLink" href="https://www.youtube.com" target="_blank">
-                    <img src="../img/icons/youtube.svg" alt="YouTube" class="social-icon">
+                    <img src="../img/icons/youtube.svg" alt="YouTube" class="socialIcon">
                 </a>
                 <a class="socialLink" href="https://discord.com" target="_blank">
-                    <img src="../img/icons/discord.svg" alt="Discord" class="social-icon">
+                    <img src="../img/icons/discord.svg" alt="Discord" class="socialIcon">
                 </a>
             </div>
         </div>
