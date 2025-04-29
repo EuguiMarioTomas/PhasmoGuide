@@ -7,7 +7,14 @@
 @use 'objetosMalditos';
 @use 'comentarios';
 @use 'mediaQuery';
+@use 'mixins';
 
+@font-face{
+    font-family: 'lazy_dog';
+    src: url('../fonts/lazy_dog.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -17,6 +24,11 @@
 body{
     background-color: #050415;
     color: #fff;
-    font-family: "Jockey One", serif;
     overflow: auto;
+}
+h2{
+    @include mixins.titulosFont(2.5rem, center, bold);
+}
+h3{
+    @include mixins.titulosFont(1.5rem, center, bold);
 }

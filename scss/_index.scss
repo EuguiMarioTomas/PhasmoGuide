@@ -1,18 +1,20 @@
 @use 'variables';
+@use 'mixins';
 
 
-.introduccion{
+%seccionBase{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.introduccion{
+    @extend %seccionBase;
     h1{
-        font-size: 50px;
-        margin-bottom: 20px;
+        @include mixins.titulosFont(4rem, center);
     }
     p{
-        font-size: 25px;
-        margin-bottom: 20px;
+        @include mixins.textosFont(2.5rem, center);
     }
     .imgPhasmoIntro{
         display: block;
@@ -31,24 +33,17 @@
     }
 }
 .consejos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @extend %seccionBase;
     margin-top: 40px;
     h2{
-        text-align: center;
-        font-size: 40px;
-        margin-bottom: 20px;
+        @include mixins.titulosFont(3rem, center);
     }
-    .listaConsejos{
-        list-style: none;
-        width: 80%;
-        margin: auto;
-        li{
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 25px;
+    .consejo{
+        h3{
+            @include mixins.textosFont(2.5rem, center, normal, 1rem, underline);
+        }
+        p{
+            @include mixins.textosFont(2.5rem, center, normal);
         }
     }
 }

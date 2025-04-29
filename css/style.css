@@ -3,13 +3,21 @@
   border-bottom: 2px solid #0066ff;
 }
 .navBar .navBarTitulo {
-  font-size: 34px;
+  font-family: "Jolly Lodger", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .navBar .navBarTitulo:hover {
   transform: scale(1.05);
 }
 .navBar .navBarLista a {
-  font-size: 24px;
+  font-family: "Jolly Lodger";
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
   border-radius: 5px;
   transition: background 0.3s ease, transform 0.2s ease;
   color: #fff;
@@ -25,6 +33,11 @@
 .footerContenido {
   background-color: #0D0B32;
 }
+.footerContenido p {
+  font-family: "Jolly Lodger";
+  font-size: 1rem;
+  font-weight: normal;
+}
 .footerContenido .socialIcon {
   width: 24px;
   height: 24px;
@@ -34,19 +47,28 @@
   transform: scale(1.1);
 }
 
-.introduccion {
+.consejos, .introduccion {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 .introduccion h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-family: "Jolly Lodger", serif;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .introduccion p {
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .introduccion .imgPhasmoIntro {
   display: block;
@@ -65,26 +87,31 @@
 }
 
 .consejos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 40px;
 }
 .consejos h2 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 3rem;
   text-align: center;
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
-.consejos .listaConsejos {
-  list-style: none;
-  width: 80%;
-  margin: auto;
+.consejos .consejo h3 {
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: underline;
 }
-.consejos .listaConsejos li {
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 25px;
+.consejos .consejo p {
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 .imgIntroTerciaria img {
@@ -129,20 +156,9 @@
   border: 4px solid #0066ff;
 }
 .equipamientoDetallado h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  margin: 40px 0 10px;
   text-decoration: underline;
 }
 .equipamientoDetallado h3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 28px;
-  margin-bottom: 15px;
   text-decoration: underline;
 }
 .equipamientoDetallado p {
@@ -236,11 +252,6 @@
   text-align: center;
   margin-bottom: 20px;
   font-size: 20px;
-}
-.fantasma .fantasmaIntro h1 {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
 }
 .fantasma .fantasmaIntro img {
   display: block;
@@ -527,6 +538,12 @@
     width: 70%;
   }
 }
+@font-face {
+  font-family: "lazy_dog";
+  src: url("../fonts/lazy_dog.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -536,8 +553,25 @@
 body {
   background-color: #050415;
   color: #fff;
-  font-family: "Jockey One", serif;
   overflow: auto;
+}
+
+h2 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

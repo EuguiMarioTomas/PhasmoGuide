@@ -1,0 +1,21 @@
+@mixin titulosFont($tamaño, $posicion: left, $weight: normal, $margenBot: 1rem, $decoracion: none){
+    font-family: 'Jolly Lodger', serif;
+    font-size: $tamaño;
+    text-align: $posicion;
+    font-weight: $weight;
+    margin-bottom: $margenBot;
+    text-decoration: $decoracion;
+}
+@mixin textosFont($tamaño, $posicion: left, $weight: normal, $margenBot: 1rem, $decoracion: none){
+    font-family: 'lazy_dog';
+    font-size: $tamaño;
+    text-align: $posicion;
+    font-weight: $weight;
+    margin-bottom: $margenBot;
+    text-decoration: $decoracion;
+}
+@mixin enlacesNavbar($tamaño, $weight: normal){
+    font-family: 'Jolly Lodger';
+    font-size: $tamaño;
+    font-weight: $weight;
+}
