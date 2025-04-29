@@ -6,11 +6,13 @@
         @include mixins.titulosFont(4rem, center);
     }
     .equipamientoIntroTexto{
-        @include mixins.textosFont(2.5rem, center);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         p{
             width: 60%;
-            text-align: justify;
-            font-size: 24px;
+            @include mixins.textosFont(2rem, justify);
         }
         img{
             width: 35%;
@@ -33,7 +35,7 @@
         @include mixins.titulosFont(3rem, center);
     }
     h3{
-        @include mixins.textosFont(2.5rem, center, normal, 1rem, underline);
+        @include mixins.textosFont(2.5rem, center, normal, 3rem, underline);
     }
     p{
         @include mixins.textosFont(2.5rem, center, normal);

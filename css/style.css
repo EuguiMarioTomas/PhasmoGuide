@@ -131,17 +131,19 @@
   text-decoration: none;
 }
 .equipamientoIntro .equipamientoIntroTexto {
-  font-family: "lazy_dog";
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .equipamientoIntro .equipamientoIntroTexto p {
   width: 60%;
+  font-family: "lazy_dog";
+  font-size: 2rem;
   text-align: justify;
-  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .equipamientoIntro .equipamientoIntroTexto img {
   width: 35%;
@@ -173,7 +175,7 @@
   font-size: 2.5rem;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-decoration: underline;
 }
 .equipamientoDetallado p {
