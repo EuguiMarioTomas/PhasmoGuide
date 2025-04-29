@@ -123,15 +123,20 @@
 }
 
 .equipamientoIntro .tituloEquipamiento {
-  font-size: 40px;
+  font-family: "Jolly Lodger", serif;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 20px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .equipamientoIntro .equipamientoIntroTexto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .equipamientoIntro .equipamientoIntroTexto p {
   width: 60%;
@@ -156,16 +161,36 @@
   border: 4px solid #0066ff;
 }
 .equipamientoDetallado h2 {
-  text-decoration: underline;
+  font-family: "Jolly Lodger", serif;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .equipamientoDetallado h3 {
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
   text-decoration: underline;
 }
 .equipamientoDetallado p {
-  font-size: 24px;
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .equipamientoDetallado ul {
-  font-size: 20px;
+  font-family: "lazy_dog";
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .equipamientoDetallado .listaNiveles {
   list-style-type: none;
@@ -212,8 +237,13 @@
 .sidebar ul, .sidebar a {
   list-style: none;
   text-decoration: none;
-  font-size: 18px;
   color: #fff;
+  font-family: "lazy_dog";
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .sidebar .accordionSideNavbarItem {
   background-color: transparent;
@@ -224,7 +254,12 @@
   background-color: transparent;
   color: #fff;
   border: none;
-  font-size: 18px;
+  font-family: "lazy_dog";
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .sidebar .accordionSideNavbarItem .accordionSideNavbarButton:focus {
   box-shadow: none;
@@ -248,10 +283,21 @@
   color: #00bfff;
 }
 
-.fantasma .fantasmaIntro p {
+.fantasma .fantasmaIntro h1 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+.fantasma .fantasmaIntro p {
+  font-family: "lazy_dog";
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .fantasma .fantasmaIntro img {
   display: block;
@@ -268,6 +314,12 @@
   background-color: #110e46;
   color: #fff !important;
   border: none;
+  font-family: "lazy_dog";
+  font-size: 2rem;
+  text-align: start;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .fantasma .accordionFantasmasItem .accordionFantasmasButton :not(.collapsed) {
   background-color: #110e46;
@@ -280,14 +332,31 @@
 .fantasma .accordionFantasmasItem .accordionFantasmaBody :focus {
   box-shadow: none !important;
 }
+.fantasma .accordionFantasmasItem .accordionFantasmaBody .listaFantasma {
+  font-family: "lazy_dog";
+  font-size: 2rem;
+  text-align: start;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  list-style: disc;
+}
 
 .objetosMalditos .tituloObjMalditos {
+  font-family: "Jolly Lodger", serif;
+  font-size: 3.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .objetosMalditos .textoIntroObjMalditos {
+  font-family: "lazy_dog";
+  font-size: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .objetosMalditos .imgTodosObjMalditos {
   width: 100%;
@@ -299,6 +368,20 @@
   border-left: 7px solid #0066ff;
   border-radius: 15px;
   color: #fff;
+  font-family: "lazy_dog";
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+.objetosMalditos .cartasTarot h2 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .objetosMalditos .cartasTarot img {
   width: 100%;
@@ -310,6 +393,20 @@
   border-left: 7px solid #0066ff;
   border-radius: 10px;
   color: #fff;
+  font-family: "lazy_dog";
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+.objetosMalditos .cardObjetoMaldito h2 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .objetosMalditos .cardObjetoMaldito img {
   width: 100%;
@@ -320,12 +417,23 @@
 .formContenido {
   width: 65%;
   margin: 50px auto;
-  text-align: center;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.9019607843);
   color: #fff;
-  margin-bottom: 50px;
+}
+.formContenido h1 {
+  font-family: "Jolly Lodger", serif;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+.formContenido #tipsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .formContenido #tipsForm input, .formContenido #tipsForm textarea {
   width: 90%;
@@ -333,7 +441,12 @@
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
-  font-size: 16px;
+  font-family: "lazy_dog";
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .formContenido #tipsForm textarea {
   height: 100px;
@@ -345,7 +458,12 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-family: "lazy_dog";
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .formContenido #tipsForm button:hover {
   background-color: #0066ff;
@@ -358,7 +476,12 @@
 .formContenido #tipsTable th, .formContenido #tipsTable td {
   border: 1px solid #0066ff;
   padding: 10px;
-  text-align: left;
+  font-family: "lazy_dog";
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
 .formContenido #tipsTable th {
   color: white;

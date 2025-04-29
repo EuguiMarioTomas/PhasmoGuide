@@ -1,5 +1,5 @@
 @use 'variables';
-
+@use 'mixins';
 
 .sidebar{
     background-color: variables.$backgroundColor;
@@ -14,8 +14,8 @@
     ul, a{
         list-style: none;
         text-decoration: none;
-        font-size: 18px;
         color:#fff;
+        @include mixins.textosFont(1.5rem, start, normal);
     }
     .accordionSideNavbarItem{
         background-color: transparent;
@@ -25,7 +25,7 @@
             background-color: transparent;
             color: #fff;
             border: none;
-            font-size: 18px;
+            @include mixins.textosFont(2rem, center, normal);
             &:focus{
                 box-shadow: none;
             }

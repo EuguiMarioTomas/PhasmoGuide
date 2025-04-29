@@ -1,12 +1,13 @@
 @use 'variables';
-
+@use 'mixins';
 
 .fantasma{
     .fantasmaIntro{
+        h1{
+            @include mixins.titulosFont(4rem, center);
+        }
         p{
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 20px;
+            @include mixins.textosFont(2.2rem, center);
         }
         img{
             display: block;
@@ -23,6 +24,7 @@
             background-color: variables.$accordionFantasmaBgColor;
             color: #fff !important;
             border: none;
+            @include mixins.textosFont(2rem, start);
             :not(.collapsed){
                 background-color: variables.$accordionFantasmaBgColor;
                 color: #fff !important;
@@ -33,6 +35,10 @@
             color: #fff !important;
             :focus{
                 box-shadow: none !important;
+            }
+            .listaFantasma{
+                @include mixins.textosFont(2rem, start);
+                list-style:disc;
             }
         }
     }
