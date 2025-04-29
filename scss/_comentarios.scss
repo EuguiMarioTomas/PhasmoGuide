@@ -1,5 +1,5 @@
 @use 'variables';
-@use 'navbar-footer';
+
 
 .formContenido{
     width: 65%;
@@ -47,21 +47,5 @@
         th{
             color: white;
         }
-    }
-}
-
-@media only screen and (max-width: 480px){
-    .formContenido{
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    .formContenido{
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 979px) and (max-width: 1366px){
-    .formContenido{
-        width: 70%;
     }
 }

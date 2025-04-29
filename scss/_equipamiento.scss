@@ -1,6 +1,5 @@
-@use 'navbar-footer';
 @use 'variables';
-@use 'navbarEquipamiento';
+
 
 .equipamientoIntro{
     .tituloEquipamiento{
@@ -85,104 +84,6 @@
                 width: auto;
                 height: 25vh;
                 border-radius: 10px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 480px){
-    .equipamientoIntro{
-        .equipamientoIntroTexto{
-            justify-content: center;
-            p{
-                max-width: 100%;
-                width: 90%;
-                text-align: center;
-            }
-            img{
-                display: none;
-            }
-        }
-    }
-    .equipamientoDetallado{
-        .equipamientoDescripcion{
-            justify-content: center;
-            padding-bottom: 10px;
-            .equipamientoCaracterizacion{
-                max-width: 100%;
-                width: 90%;
-                text-align: start;
-                border: none;
-            }
-            .imgEquipDescripcion{
-                display: none;
-            }
-        }
-    }
-    .sidebar{
-        display: none;
-    }
-}
-@media only screen and (min-width:481px) and (max-width:978px){
-    .equipamientoIntro{
-        .equipamientoIntroTexto{
-            justify-content: center;
-            p{
-                max-width: 100%;
-                width: 90%;
-                text-align: center;
-            }
-            img{
-                display: none;
-            }
-        }
-    }
-    .equipamientoDetallado{
-        .equipamientoDescripcion{
-            justify-content: center;
-            padding-bottom: 10px;
-            .equipamientoCaracterizacion{
-                max-width: 100%;
-                width: 90%;
-                text-align: start;
-                border: none;
-            }
-            .imgEquipDescripcion{
-                display: none;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 979px) and (max-width: 1366px){
-    .equipamientoIntro{
-        .equipamientoIntroTexto{
-            justify-content: center;
-            p{
-                max-width: 100%;
-                width: 90%;
-                text-align: center;
-            }
-            img{
-                display: none;
-            }
-        }
-    }
-    .equipamientoDetallado{
-        .equipamientoDescripcion{
-            justify-content: center;
-            padding-bottom: 10px;
-            .equipamientoCaracterizacion{
-                max-width: 100%;
-                width: 90%;
-                text-align: start;
-                border: none;
-            }
-            .imgEquipDescripcion{
-                img{
-                    width: 90%;
-                    height: 50%;
-                }
             }
         }
     }

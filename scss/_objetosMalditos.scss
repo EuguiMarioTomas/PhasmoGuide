@@ -1,5 +1,4 @@
 @use 'variables';
-@use 'navbar-footer';
 
 
 .objetosMalditos{
@@ -38,51 +37,4 @@
             border-radius: 10px;
         }
     }
-}
-@media  only screen and (max-width: 480px) {
-    .imgTodosObjMalditos{
-        display: none;
-    }
-    .cartasTarot{
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
-        img{
-            max-width: 80%;
-        }
-    }
-    .cardObjetoMaldito{
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
-        border-left: none;
-        img{
-            max-width: 80%;
-        }
-    }
-}
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    .imgTodosObjMalditos{
-        border-radius: 10px;
-    }
-    .cartasTarot{
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
-        img{
-            max-width: 80%;
-        }
-    }
-    .cardObjetoMaldito{
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
-        border-left: none;
-        img{
-            max-width: 80%;
-        }
-    }
-}
-@media only screen and (min-width: 979px) and (max-width: 1366px){
-    
 }

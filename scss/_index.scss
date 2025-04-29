@@ -1,6 +1,5 @@
-@use 'navbar-footer';
 @use 'variables';
-@use 'mediaQuery';
+
 
 .introduccion{
     display: flex;
@@ -60,45 +59,5 @@
         max-width: 1000px;
         margin: 20px auto;
         border-radius: 10px;
-    }
-}
-@media only screen and (max-width:480px){
-    .introduccion{
-        text-align: center;
-        .imgIntroSecundarias{
-            display: none;
-        }
-    }
-    .listaConsejos{
-        padding: 0;
-        li{
-            border: 4px double variables.$borderColor;
-            text-align: center;
-        }
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 978px){
-    .introduccion{
-        text-align: center;
-        
-    }
-    .listaConsejos{
-        padding: 0;
-        li{
-            text-align: center;
-        }
-    }
-}
-
-@media only screen and (min-width: 979px) and (max-width: 1366px){
-    .introduccion{
-        text-align: center; 
-    }
-    .listaConsejos{
-        padding: 0;
-        li{
-            text-align: center;
-        }
     }
 }

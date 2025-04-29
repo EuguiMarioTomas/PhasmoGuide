@@ -1,18 +1,543 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @use 'mediaQuery';
- *   | ^^^^^^^^^^^^^^^^^
- *   '
- *   _index.scss 3:1  @use
- *   style.scss 3:1   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use 'mediaQuery';\d\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   _index.scss 3:1  @use\a   style.scss 3:1   root stylesheet";
+.navBar {
+  background-color: #0D0B32;
+  border-bottom: 2px solid #0066ff;
 }
+.navBar .navBarTitulo {
+  font-size: 34px;
+}
+.navBar .navBarTitulo:hover {
+  transform: scale(1.05);
+}
+.navBar .navBarLista a {
+  font-size: 24px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color: #fff;
+}
+.navBar .navBarLista a:hover {
+  background-color: #0066ff;
+  transform: scale(1.05);
+}
+.navBar .navBarLista a:active {
+  transform: scale(0.95);
+}
+
+.footerContenido {
+  background-color: #0D0B32;
+}
+.footerContenido .socialIcon {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+.footerContenido .socialIcon:hover {
+  transform: scale(1.1);
+}
+
+.introduccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduccion h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.introduccion p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.introduccion .imgPhasmoIntro {
+  display: block;
+  width: 100%;
+  max-width: 60%;
+  margin: 20px auto;
+}
+.introduccion .imgIntroSecundarias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduccion .imgIntroSecundarias img {
+  width: 48%;
+  border-radius: 10px;
+}
+
+.consejos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.consejos h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.consejos .listaConsejos {
+  list-style: none;
+  width: 80%;
+  margin: auto;
+}
+.consejos .listaConsejos li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.imgIntroTerciaria img {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.equipamientoIntro .tituloEquipamiento {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.equipamientoIntro .equipamientoIntroTexto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.equipamientoIntro .equipamientoIntroTexto p {
+  width: 60%;
+  text-align: justify;
+  font-size: 24px;
+}
+.equipamientoIntro .equipamientoIntroTexto img {
+  width: 35%;
+  border-radius: 10px;
+}
+.equipamientoIntro .imagPhasmoEquipamiento {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.equipamientoDetallado {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  border-radius: 10px;
+  border: 4px solid #0066ff;
+}
+.equipamientoDetallado h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  margin: 40px 0 10px;
+  text-decoration: underline;
+}
+.equipamientoDetallado h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.equipamientoDetallado p {
+  font-size: 24px;
+}
+.equipamientoDetallado ul {
+  font-size: 20px;
+}
+.equipamientoDetallado .listaNiveles {
+  list-style-type: none;
+}
+.equipamientoDetallado .equipamientoDescripcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+  width: 60%;
+  text-align: justify;
+  border-left: 4px solid #0066ff;
+  background-color: rgba(0, 0, 255, 0.1647058824);
+  border-radius: 5px;
+}
+.equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+  padding: 10px;
+  gap: 10px;
+}
+.equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion img {
+  width: auto;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  border-right: 4px solid #0066ff;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px;
+}
+.sidebar ul, .sidebar a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar .accordionSideNavbarItem {
+  background-color: transparent;
+  border: 2px solid #0066ff;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarButton {
+  pointer-events: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarButton:focus {
+  box-shadow: none;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarButton:not(.collapsed) {
+  color: white;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarBody {
+  background-color: transparent;
+  padding-left: 1rem;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarBody .linkSideBar {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin: 0.2rem 0;
+  transition: color 0.3s;
+}
+.sidebar .accordionSideNavbarItem .accordionSideNavbarBody .linkSideBar:hover {
+  color: #00bfff;
+}
+
+.fantasma .fantasmaIntro p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.fantasma .fantasmaIntro h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.fantasma .fantasmaIntro img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.fantasma .accordionFantasmasItem {
+  background-color: #110e46;
+  border: 2px solid #0066ff;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmasButton {
+  background-color: #110e46;
+  color: #fff !important;
+  border: none;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmasButton :not(.collapsed) {
+  background-color: #110e46;
+  color: #fff !important;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmaBody {
+  background-color: #110e46 !important;
+  color: #fff !important;
+}
+.fantasma .accordionFantasmasItem .accordionFantasmaBody :focus {
+  box-shadow: none !important;
+}
+
+.objetosMalditos .tituloObjMalditos {
+  text-align: center;
+  font-size: 2rem;
+}
+.objetosMalditos .textoIntroObjMalditos {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.objetosMalditos .imgTodosObjMalditos {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.objetosMalditos .cartasTarot {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  border-left: 7px solid #0066ff;
+  border-radius: 15px;
+  color: #fff;
+}
+.objetosMalditos .cartasTarot img {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+}
+.objetosMalditos .cardObjetoMaldito {
+  background-color: rgba(0, 0, 255, 0.1098039216);
+  border-left: 7px solid #0066ff;
+  border-radius: 10px;
+  color: #fff;
+}
+.objetosMalditos .cardObjetoMaldito img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.formContenido {
+  width: 65%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.9019607843);
+  color: #fff;
+  margin-bottom: 50px;
+}
+.formContenido #tipsForm input, .formContenido #tipsForm textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.formContenido #tipsForm textarea {
+  height: 100px;
+}
+.formContenido #tipsForm button {
+  background-color: rgba(0, 0, 255, 0.1647058824);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.formContenido #tipsForm button:hover {
+  background-color: #0066ff;
+}
+.formContenido #tipsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.formContenido #tipsTable th, .formContenido #tipsTable td {
+  border: 1px solid #0066ff;
+  padding: 10px;
+  text-align: left;
+}
+.formContenido #tipsTable th {
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  /*INDEX*/
+  .introduccion {
+    text-align: center;
+  }
+  .introduccion .imgIntroSecundarias {
+    display: none;
+  }
+  .listaConsejos {
+    padding: 0;
+  }
+  .listaConsejos li {
+    border: 4px double #0066ff;
+    text-align: center;
+  }
+  /*EQUIPAMIENTO*/
+  .equipamientoIntro .equipamientoIntroTexto {
+    justify-content: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto p {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto img {
+    display: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+    max-width: 100%;
+    width: 90%;
+    text-align: start;
+    border: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  /*OBJ MALDITOS*/
+  .imgTodosObjMalditos {
+    display: none;
+  }
+  .cartasTarot {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  .cartasTarot img {
+    max-width: 80%;
+  }
+  .cardObjetoMaldito {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    border-left: none;
+  }
+  .cardObjetoMaldito img {
+    max-width: 80%;
+  }
+  /*COMENTARIOS*/
+  .formContenido {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  /*INDEX*/
+  .introduccion {
+    text-align: center;
+  }
+  .listaConsejos {
+    padding: 0;
+  }
+  .listaConsejos li {
+    text-align: center;
+  }
+  /*EQUIPAMIENTO*/
+  .equipamientoIntro .equipamientoIntroTexto {
+    justify-content: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto p {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto img {
+    display: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+    max-width: 100%;
+    width: 90%;
+    text-align: start;
+    border: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion {
+    display: none;
+  }
+  /*OBJ MALDITOS*/
+  .imgTodosObjMalditos {
+    border-radius: 10px;
+  }
+  .cartasTarot {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  .cartasTarot img {
+    max-width: 80%;
+  }
+  .cardObjetoMaldito {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    border-left: none;
+  }
+  .cardObjetoMaldito img {
+    max-width: 80%;
+  }
+  /*COMENTARIOS*/
+  .formContenido {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 979px) and (max-width: 1366px) {
+  /*INDEX*/
+  .introduccion {
+    text-align: center;
+  }
+  .listaConsejos {
+    padding: 0;
+  }
+  .listaConsejos li {
+    text-align: center;
+  }
+  /*EQUIPAMIENTO*/
+  .equipamientoIntro .equipamientoIntroTexto {
+    justify-content: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto p {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+  }
+  .equipamientoIntro .equipamientoIntroTexto img {
+    display: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
+    max-width: 100%;
+    width: 90%;
+    text-align: start;
+    border: none;
+  }
+  .equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion img {
+    width: 90%;
+    height: 50%;
+  }
+  /*OBJ MALDITOS*/
+  /*COMENTARIOS*/
+  .formContenido {
+    width: 70%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050415;
+  color: #fff;
+  font-family: "Jockey One", serif;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
