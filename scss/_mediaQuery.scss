@@ -1,0 +1,205 @@
+@use 'variables';
+@use 'index';
+@use 'equipamiento';
+@use 'objetosMalditos';
+@use 'comentarios';
+
+@media only screen and (max-width:480px){
+    /*INDEX*/
+    .introduccion{
+        text-align: center;
+        .imgIntroSecundarias{
+            display: none;
+        }
+    }
+    .listaConsejos{
+        padding: 0;
+        li{
+            border: 4px double variables.$borderColor;
+            text-align: center;
+        }
+    }
+
+    /*EQUIPAMIENTO*/
+    .equipamientoIntro{
+        .equipamientoIntroTexto{
+            justify-content: center;
+            p{
+                max-width: 100%;
+                width: 90%;
+                text-align: center;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    .equipamientoDetallado{
+        .equipamientoDescripcion{
+            justify-content: center;
+            padding-bottom: 10px;
+            .equipamientoCaracterizacion{
+                max-width: 100%;
+                width: 90%;
+                text-align: start;
+                border: none;
+            }
+            .imgEquipDescripcion{
+                display: none;
+            }
+        }
+    }
+    .sidebar{
+        display: none;
+    }
+
+    /*OBJ MALDITOS*/
+    .imgTodosObjMalditos{
+        display: none;
+    }
+    .cartasTarot{
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        img{
+            max-width: 80%;
+        }
+    }
+    .cardObjetoMaldito{
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        border-left: none;
+        img{
+            max-width: 80%;
+        }
+    }
+
+    /*COMENTARIOS*/
+    .formContenido{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 978px){
+    /*INDEX*/
+    .introduccion{
+        text-align: center;
+        
+    }
+    .listaConsejos{
+        padding: 0;
+        li{
+            text-align: center;
+        }
+    }
+
+    /*EQUIPAMIENTO*/
+    .equipamientoIntro{
+        .equipamientoIntroTexto{
+            justify-content: center;
+            p{
+                max-width: 100%;
+                width: 90%;
+                text-align: center;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    .equipamientoDetallado{
+        .equipamientoDescripcion{
+            justify-content: center;
+            padding-bottom: 10px;
+            .equipamientoCaracterizacion{
+                max-width: 100%;
+                width: 90%;
+                text-align: start;
+                border: none;
+            }
+            .imgEquipDescripcion{
+                display: none;
+            }
+        }
+    }
+
+    /*OBJ MALDITOS*/
+    .imgTodosObjMalditos{
+        border-radius: 10px;
+    }
+    .cartasTarot{
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        img{
+            max-width: 80%;
+        }
+    }
+    .cardObjetoMaldito{
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        border-left: none;
+        img{
+            max-width: 80%;
+        }
+    }
+
+    /*COMENTARIOS*/
+    .formContenido{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 979px) and (max-width: 1366px){
+    /*INDEX*/
+    .introduccion{
+        text-align: center; 
+    }
+    .listaConsejos{
+        padding: 0;
+        li{
+            text-align: center;
+        }
+    }
+
+    /*EQUIPAMIENTO*/
+    .equipamientoIntro{
+        .equipamientoIntroTexto{
+            justify-content: center;
+            p{
+                max-width: 100%;
+                width: 90%;
+                text-align: center;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    .equipamientoDetallado{
+        .equipamientoDescripcion{
+            justify-content: center;
+            padding-bottom: 10px;
+            .equipamientoCaracterizacion{
+                max-width: 100%;
+                width: 90%;
+                text-align: start;
+                border: none;
+            }
+            .imgEquipDescripcion{
+                img{
+                    width: 90%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+    /*OBJ MALDITOS*/
+
+    /*COMENTARIOS*/
+    .formContenido{
+        width: 70%;
+    }
+}
