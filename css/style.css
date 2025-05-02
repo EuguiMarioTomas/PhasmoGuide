@@ -188,19 +188,21 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 1.5% 0 1.5% 0;
 }
 .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
   width: 60%;
   border-left: 4px solid #0066ff;
   background-color: rgba(0, 0, 255, 0.1647058824);
   border-radius: 5px;
+  padding-top: 3%;
 }
 .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion .listaNiveles {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  margin: 10%;
+  margin: 0 10% 0 10%;
 }
 .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion .listaNiveles p {
   text-align: start;

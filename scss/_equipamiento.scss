@@ -44,17 +44,19 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        padding: 1.5% 0 1.5% 0;
         .equipamientoCaracterizacion{
             width: 60%;
             border-left: 4px solid variables.$borderColor;
             background-color: variables.$equipBackgroundColor;
             border-radius: 5px;
+            padding-top: 3%;
             .listaNiveles{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: start;
-                margin: 10%;
+                margin: 0 10% 0 10%;
                 p{
                     text-align: start;
                 }
