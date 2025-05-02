@@ -1,15 +1,14 @@
 @use 'variables';
 @use 'mixins';
+@use 'index';
 
 .equipamientoIntro{
     .tituloEquipamiento{
         @include mixins.titulosFont(4rem, center);
     }
     .equipamientoIntroTexto{
-        display: flex;
+        @extend %seccionBase;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         p{
             width: 60%;
             @include mixins.textosFont(2rem, justify);
@@ -40,12 +39,6 @@
     p{
         @include mixins.textosFont(2.5rem, center, normal);
     }
-    ul{
-        @include mixins.textosFont(2.5rem, center, normal);
-    }
-    .listaNiveles{
-        list-style-type: none;
-    }
     .equipamientoDescripcion{
         display: flex;
         flex-direction: row;
@@ -53,10 +46,19 @@
         align-items: center;
         .equipamientoCaracterizacion{
             width: 60%;
-            text-align: justify;
             border-left: 4px solid variables.$borderColor;
             background-color: variables.$equipBackgroundColor;
             border-radius: 5px;
+            .listaNiveles{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                margin: 10%;
+                p{
+                    text-align: start;
+                }
+            }
         }
         .imgEquipDescripcion{
             display: flex;

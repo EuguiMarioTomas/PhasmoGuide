@@ -36,9 +36,8 @@
             :focus{
                 box-shadow: none !important;
             }
-            .listaFantasma{
+            .datosFantasma{
                 @include mixins.textosFont(2rem, start);
-                list-style:disc;
             }
         }
     }
