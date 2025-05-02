@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'mixins';
 @use 'navbar-footer';
 @use 'index';
 @use 'equipamiento';
@@ -7,7 +8,6 @@
 @use 'objetosMalditos';
 @use 'comentarios';
 @use 'mediaQuery';
-@use 'mixins';
 
 @font-face{
     font-family: 'lazy_dog';

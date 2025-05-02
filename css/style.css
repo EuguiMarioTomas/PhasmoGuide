@@ -47,11 +47,11 @@
   transform: scale(1.1);
 }
 
-.consejos, .introduccion {
+.equipamientoIntro .equipamientoIntroTexto, .consejos, .introduccion {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .introduccion h1 {
@@ -131,10 +131,7 @@
   text-decoration: none;
 }
 .equipamientoIntro .equipamientoIntroTexto {
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 .equipamientoIntro .equipamientoIntroTexto p {
   width: 60%;
@@ -186,17 +183,6 @@
   margin-bottom: 1rem;
   text-decoration: none;
 }
-.equipamientoDetallado ul {
-  font-family: "lazy_dog";
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  text-decoration: none;
-}
-.equipamientoDetallado .listaNiveles {
-  list-style-type: none;
-}
 .equipamientoDetallado .equipamientoDescripcion {
   display: flex;
   flex-direction: row;
@@ -205,10 +191,19 @@
 }
 .equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion {
   width: 60%;
-  text-align: justify;
   border-left: 4px solid #0066ff;
   background-color: rgba(0, 0, 255, 0.1647058824);
   border-radius: 5px;
+}
+.equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion .listaNiveles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin: 10%;
+}
+.equipamientoDetallado .equipamientoDescripcion .equipamientoCaracterizacion .listaNiveles p {
+  text-align: start;
 }
 .equipamientoDetallado .equipamientoDescripcion .imgEquipDescripcion {
   display: flex;
@@ -334,14 +329,13 @@
 .fantasma .accordionFantasmasItem .accordionFantasmaBody :focus {
   box-shadow: none !important;
 }
-.fantasma .accordionFantasmasItem .accordionFantasmaBody .listaFantasma {
+.fantasma .accordionFantasmasItem .accordionFantasmaBody .datosFantasma {
   font-family: "lazy_dog";
   font-size: 2rem;
   text-align: start;
   font-weight: normal;
   margin-bottom: 1rem;
   text-decoration: none;
-  list-style: disc;
 }
 
 .objetosMalditos .tituloObjMalditos {
