@@ -1,7 +1,10 @@
 
 document.getElementById("tipsForm").addEventListener("submit", function(event) {
     event.preventDefault(); //Evita que la página se recargue
-
+    const myModal = new bootstrap.Modal(document.getElementById('functionalityUnavailableModal'));
+    myModal.show()
+    document.getElementById("tipsForm").reset();
+    /** 
     //Obtener valores de los inputs
     let username = document.getElementById("usernameInput").value.trim();
     let tip = document.getElementById("tipInput").value.trim();
@@ -24,4 +27,6 @@ document.getElementById("tipsForm").addEventListener("submit", function(event) {
 
     //Limpiar los campos del formulario
     document.getElementById("tipsForm").reset();
+    */
 });
+
