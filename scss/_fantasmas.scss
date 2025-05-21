@@ -24,6 +24,10 @@
             background-color: variables.$accordionFantasmaBgColor;
             color: #fff !important;
             border: none;
+            box-shadow: none;
+            &::after{
+                display: none;
+            }
             @include mixins.textosFont(2rem, start);
             :not(.collapsed){
                 background-color: variables.$accordionFantasmaBgColor;
