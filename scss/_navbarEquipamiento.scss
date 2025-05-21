@@ -3,14 +3,14 @@
 
 .sidebar{
     background-color: variables.$backgroundColor;
-    height: 100vh;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 8rem;
+    right: 0;
     border-right: 4px solid variables.$borderColor;
     padding: 1rem;
-    overflow-y: auto;
     overflow-x: hidden;
     border-radius: 10px;
+    z-index: 1040;
     ul, a{
         list-style: none;
         text-decoration: none;
@@ -21,11 +21,14 @@
         background-color: transparent;
         border: 2px solid variables.$borderColor;
         .accordionSideNavbarButton{
-            pointer-events: none;
             background-color: transparent;
             color: #fff;
             border: none;
+            box-shadow: none;
             @include mixins.textosFont(2rem, center, normal);
+            &::after{
+                display: none;
+            }
             &:focus{
                 box-shadow: none;
             }
@@ -44,7 +47,7 @@
                 margin: 0.2rem 0;
                 transition: color 0.3s;
                 &:hover{
-                    color: #00bfff; // un azul más clarito al pasar el mouse
+                    color: #00bfff;
                 }
             }
         }

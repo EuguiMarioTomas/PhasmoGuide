@@ -4,7 +4,11 @@
 .navBar{
     background-color: variables.$navBarFooterBackColor;
     border-bottom: 2px solid variables.$borderColor;
-
+    z-index: 1050;
+    .menuHamburguesa{
+        z-index: 1051;
+        width: 100%;
+    }
     .navBarTitulo{
         @include mixins.titulosFont(2.5rem, center, normal);
         &:hover{
