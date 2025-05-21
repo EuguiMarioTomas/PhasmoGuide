@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/icons/iconPhasmoGuide.ico"> 
-    <title>PhasmoGuide</title>
+    <title>Equipamiento PhasmoGuide</title>
+    <meta name="descripcion" content="Guía del Equipamiento de Phasmophobia en español con información sobre como se usa cada equipamiento para mejorar en el juego.">
+    <meta name="keywords" content="PHASMOPHOBIA, EQUIPAMIENTO, GUIA, OBTENER EVIDENCIAS">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +22,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top navBar">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navBar">
+            <div class="container-fluid navbarCollapse">
                 <a class="navbar-brand navBarTitulo" href="../index.html">PhasmoGuide</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end menuHamburguesa" id="navbarNav">
                     <ul class="navbar-nav navBarLista">
                         <li class="nav-item"><a class="nav-link" href="equipamiento.html">Equipamiento</a></li>
                         <li class="nav-item"><a class="nav-link" href="fantasmas.html">Fantasmas</a></li>
@@ -388,15 +390,15 @@
                     </div>
                 </section>
             </section>
-            <nav class="col-md-3 col-lg-3 col-xxl-2 d-md-block vh-100 p-3 sticky-top sidebar">
+            <nav class="col-md-3 col-lg-3 col-xxl-2 d-md-block p-3 sidebar" id="equipSidebar">
                 <div class="accordion" id="navbarAccordion">
                     <div class="accordion-item accordionSideNavbarItem">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEsencialApoyo" aria-expanded="false" aria-controls="collapseEsencialApoyo">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionSideNavbarButton text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEsencialApoyo" aria-expanded="false" aria-controls="collapseEsencialApoyo">
                                 Esencial Y Apoyo.
                             </button>
-                        </h3>
-                        <div id="collapseEsencialApoyo" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                        </h2>
+                        <div id="collapseEsencialApoyo" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                             <div class="accordion-body accordionSideNavbarBody">
                                 <ul>
                                     <li><a href="#linterna">Linterna</a></li>
@@ -414,12 +416,12 @@
                         </div>
                     </div>
                     <div class="accordion-item accordionSideNavbarItem">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeteccionEvidencias" aria-expanded="false" aria-controls="collapseDeteccionEvidencias">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionSideNavbarButton text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeteccionEvidencias" aria-expanded="false" aria-controls="collapseDeteccionEvidencias">
                                 Deteccion de Evidencias.
                             </button>
-                        </h3>
-                        <div id="collapseDeteccionEvidencias" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                        </h2>
+                        <div id="collapseDeteccionEvidencias" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                             <div class="accordion-body accordionSideNavbarBody">
                                 <ul class="linkSideBar">
                                     <li><a href="#emf">EMF</a></li>
@@ -434,12 +436,12 @@
                         </div>
                     </div>
                     <div class="accordion-item accordionSideNavbarItem">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button accordionSideNavbarButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProteccionSupervivencia" aria-expanded="false" aria-controls="collapseProteccionSupervivencia">
-                                Proteccion y Supervivencia
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionSideNavbarButton text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProteccionSupervivencia" aria-expanded="false" aria-controls="collapseProteccionSupervivencia">
+                                Proteccion
                             </button>
-                        </h3>
-                        <div id="collapseProteccionSupervivencia" class="accordion-collapse collapse show" data-bs-parent="#navbarAccordion">
+                        </h2>
+                        <div id="collapseProteccionSupervivencia" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                             <div class="accordion-body accordionSideNavbarBody">
                                 <ul>
                                     <li><a href="#incienso">Incienso</a></li>
@@ -455,7 +457,7 @@
     </main>
     <footer class="text-center text-light py-2 border-top border-primary footerContenido">
         <div class="container">
-            <h3 class="fs-4 fw-bold">PhasmoGuide</h3>
+            <p class="fs-4 fw-bold">PhasmoGuide</p>
             <p class=" small mb-1">
                 Esta guía de Phasmophobia está bajo la 
                 <a class="linkLicencia" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
@@ -478,5 +480,6 @@
     </footer>
     <!--Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 </html>
